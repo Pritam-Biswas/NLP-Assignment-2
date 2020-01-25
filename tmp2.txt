@@ -1,0 +1,2254 @@
+input:  ['flights', 'from', 'los', 'angeles', 'to', 'pittsburgh', '.']
+target:     ('TOP', ('NP', ('NP', 'flights'), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', ('LOS', 'los'), ('ANGELES', 'angeles'))), ('PP', ('TO', 'to'), ('NP', 'pittsburgh')))), ('PUN', '.'))
+predicted:  ('TOP', ('NP', ('NP', 'flights'), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', ('LOS', 'los'), ('ANGELES', 'angeles'))), ('PP', ('TO', 'to'), ('NP', 'pittsburgh')))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+flights
+enter if str
+from
+enter if str
+los
+enter if str
+angeles
+enter if str
+to
+enter if str
+pittsburgh
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+flights
+enter if str
+from
+enter if str
+los
+enter if str
+angeles
+enter if str
+to
+enter if str
+pittsburgh
+enter if str
+.
+gold constants
+{('PP', 4, 6), ('PP', 1, 4), ('ANGELES', 3, 4), ('FROM', 1, 2), ('NP', 2, 4), ('TO', 4, 5), ('NPBAR', 1, 6), ('TOP', 0, 7), ('PUN', 6, 7), ('NP', 5, 6), ('NP', 0, 6), ('LOS', 2, 3), ('NP', 0, 1)}
+test constants
+{('PP', 4, 6), ('PP', 1, 4), ('ANGELES', 3, 4), ('FROM', 1, 2), ('NP', 2, 4), ('TO', 4, 5), ('NPBAR', 1, 6), ('TOP', 0, 7), ('PUN', 6, 7), ('NP', 5, 6), ('NP', 0, 6), ('LOS', 2, 3), ('NP', 0, 1)}
+P:1.0 R:1.0 F:1.0
+
+input:  ['with', 'the', 'least', 'expensive', 'fare', '.']
+target:     ('TOP', ('PP', ('WITH', 'with'), ('NP', ('THE', 'the'), ('NPBAR', ('ADJP', ('LEAST', 'least'), ('EXPENSIVE', 'expensive')), ('FARE', 'fare')))), ('PUN', '.'))
+predicted:  ()
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+with
+enter if str
+the
+enter if str
+least
+enter if str
+expensive
+enter if str
+fare
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if not tree
+gold constants
+{('THE', 1, 2), ('NPBAR', 2, 5), ('NP', 1, 5), ('TOP', 0, 6), ('ADJP', 2, 4), ('WITH', 0, 1), ('PP', 0, 5), ('LEAST', 2, 3), ('PUN', 5, 6), ('FARE', 4, 5), ('EXPENSIVE', 3, 4)}
+test constants
+set()
+P:0.0 R:0.0 F:0.0
+
+input:  ['flights', 'between', 'tampa', 'and', 'saint', 'louis', '.']
+target:     ('TOP', ('NP', ('NP', 'flights'), ('PP', ('BETWEEN', 'between'), ('NP', ('NP', 'tampa'), ('NPBAR', ('AND', 'and'), ('NP', ('SAINT', 'saint'), ('LOUIS', 'louis')))))), ('PUN', '.'))
+predicted:  ('TOP', ('NP', ('NP', 'flights'), ('NPBAR', ('PP', ('BETWEEN', 'between'), ('NP', 'tampa')), ('NPBAR', ('AND', 'and'), ('NP', ('SAINT', 'saint'), ('LOUIS', 'louis'))))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+flights
+enter if str
+between
+enter if str
+tampa
+enter if str
+and
+enter if str
+saint
+enter if str
+louis
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+flights
+enter if str
+between
+enter if str
+tampa
+enter if str
+and
+enter if str
+saint
+enter if str
+louis
+enter if str
+.
+gold constants
+{('LOUIS', 5, 6), ('NP', 0, 6), ('NP', 4, 6), ('PP', 1, 6), ('SAINT', 4, 5), ('TOP', 0, 7), ('PUN', 6, 7), ('NP', 2, 3), ('NPBAR', 3, 6), ('BETWEEN', 1, 2), ('NP', 2, 6), ('NP', 0, 1), ('AND', 3, 4)}
+test constants
+{('LOUIS', 5, 6), ('NP', 4, 6), ('NPBAR', 1, 6), ('PP', 1, 3), ('SAINT', 4, 5), ('TOP', 0, 7), ('PUN', 6, 7), ('NP', 2, 3), ('NPBAR', 3, 6), ('BETWEEN', 1, 2), ('NP', 0, 6), ('NP', 0, 1), ('AND', 3, 4)}
+P:0.8461538461538461 R:0.8461538461538461 F:0.8461538461538461
+
+input:  ['i', "'d", 'like', 'a', 'flight', 'tomorrow', 'from', 'columbus', 'to', 'houston', 'with', 'a', 'stopover', 'in', 'nashville', '.']
+target:     ('TOP', ('S', ('NP', 'i'), ('VP', ("'D", "'d"), ('VP', ('LIKE', 'like'), ('NP', ('NP', ('A', 'a'), ('FLIGHT', 'flight')), ('NPBAR', ('NP', 'tomorrow'), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', 'columbus')), ('NPBAR', ('PP', ('TO', 'to'), ('NP', 'houston')), ('PP', ('WITH', 'with'), ('NP', ('NP', ('A', 'a'), ('STOPOVER', 'stopover')), ('PP', ('IN', 'in'), ('NP', 'nashville'))))))))))), ('PUN', '.'))
+predicted:  ()
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+i
+enter if str
+'d
+enter if str
+like
+enter if str
+a
+enter if str
+flight
+enter if str
+tomorrow
+enter if str
+from
+enter if str
+columbus
+enter if str
+to
+enter if str
+houston
+enter if str
+with
+enter if str
+a
+enter if str
+stopover
+enter if str
+in
+enter if str
+nashville
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if not tree
+gold constants
+{('FROM', 6, 7), ('VP', 1, 15), ('FLIGHT', 4, 5), ('STOPOVER', 12, 13), ('NP', 9, 10), ('NP', 5, 6), ('PUN', 15, 16), ('NPBAR', 6, 15), ('TO', 8, 9), ('IN', 13, 14), ('NP', 3, 5), ('NP', 3, 15), ('NP', 14, 15), ('NP', 7, 8), ('NPBAR', 8, 15), ("'D", 1, 2), ('S', 0, 15), ('LIKE', 2, 3), ('A', 3, 4), ('A', 11, 12), ('PP', 13, 15), ('TOP', 0, 16), ('PP', 10, 15), ('VP', 2, 15), ('NP', 0, 1), ('PP', 8, 10), ('NP', 11, 15), ('WITH', 10, 11), ('NPBAR', 5, 15), ('PP', 6, 8), ('NP', 11, 13)}
+test constants
+set()
+P:0.0 R:0.0 F:0.0
+
+input:  ['display', 'the', 'fare', 'codes', '.']
+target:     ('TOP', ('VP', ('DISPLAY', 'display'), ('NP', ('THE', 'the'), ('NPBAR', ('FARE', 'fare'), ('CODES', 'codes')))), ('PUN', '.'))
+predicted:  ()
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+display
+enter if str
+the
+enter if str
+fare
+enter if str
+codes
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if not tree
+gold constants
+{('TOP', 0, 5), ('THE', 1, 2), ('NP', 1, 4), ('VP', 0, 4), ('NPBAR', 2, 4), ('PUN', 4, 5), ('CODES', 3, 4), ('FARE', 2, 3), ('DISPLAY', 0, 1)}
+test constants
+set()
+P:0.0 R:0.0 F:0.0
+
+input:  ['what', 'flights', 'from', 'kansas', 'city', 'to', 'denver', '.']
+target:     ('TOP', ('WHNP', ('WHNP', ('WHAT', 'what'), ('FLIGHTS', 'flights')), ('WHNPBAR', ('PP', ('FROM', 'from'), ('NP', ('KANSAS', 'kansas'), ('CITY', 'city'))), ('PP', ('TO', 'to'), ('NP', 'denver')))), ('PUN', '.'))
+predicted:  ('TOP', ('WHNP', ('WHNP', ('WHAT', 'what'), ('FLIGHTS', 'flights')), ('WHNPBAR', ('PP', ('FROM', 'from'), ('NP', ('KANSAS', 'kansas'), ('CITY', 'city'))), ('PP', ('TO', 'to'), ('NP', 'denver')))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+what
+enter if str
+flights
+enter if str
+from
+enter if str
+kansas
+enter if str
+city
+enter if str
+to
+enter if str
+denver
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+what
+enter if str
+flights
+enter if str
+from
+enter if str
+kansas
+enter if str
+city
+enter if str
+to
+enter if str
+denver
+enter if str
+.
+gold constants
+{('WHNPBAR', 2, 7), ('FROM', 2, 3), ('PP', 2, 5), ('FLIGHTS', 1, 2), ('KANSAS', 3, 4), ('WHAT', 0, 1), ('CITY', 4, 5), ('PUN', 7, 8), ('PP', 5, 7), ('WHNP', 0, 7), ('WHNP', 0, 2), ('NP', 6, 7), ('TO', 5, 6), ('NP', 3, 5), ('TOP', 0, 8)}
+test constants
+{('WHNPBAR', 2, 7), ('FROM', 2, 3), ('PP', 2, 5), ('FLIGHTS', 1, 2), ('KANSAS', 3, 4), ('WHAT', 0, 1), ('CITY', 4, 5), ('PUN', 7, 8), ('PP', 5, 7), ('WHNP', 0, 7), ('WHNP', 0, 2), ('NP', 6, 7), ('TO', 5, 6), ('NP', 3, 5), ('TOP', 0, 8)}
+P:1.0 R:1.0 F:1.0
+
+input:  ['what', 'flights', 'from', 'minneapolis', 'to', 'pittsburgh', '.']
+target:     ('TOP', ('WHNP', ('WHNP', ('WHAT', 'what'), ('FLIGHTS', 'flights')), ('WHNPBAR', ('PP', ('FROM', 'from'), ('NP', 'minneapolis')), ('PP', ('TO', 'to'), ('NP', 'pittsburgh')))), ('PUN', '.'))
+predicted:  ('TOP', ('WHNP', ('WHNP', ('WHAT', 'what'), ('FLIGHTS', 'flights')), ('WHNPBAR', ('PP', ('FROM', 'from'), ('NP', 'minneapolis')), ('PP', ('TO', 'to'), ('NP', 'pittsburgh')))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+what
+enter if str
+flights
+enter if str
+from
+enter if str
+minneapolis
+enter if str
+to
+enter if str
+pittsburgh
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+what
+enter if str
+flights
+enter if str
+from
+enter if str
+minneapolis
+enter if str
+to
+enter if str
+pittsburgh
+enter if str
+.
+gold constants
+{('PP', 4, 6), ('FROM', 2, 3), ('FLIGHTS', 1, 2), ('WHAT', 0, 1), ('TO', 4, 5), ('WHNPBAR', 2, 6), ('NP', 3, 4), ('WHNP', 0, 2), ('TOP', 0, 7), ('PUN', 6, 7), ('NP', 5, 6), ('WHNP', 0, 6), ('PP', 2, 4)}
+test constants
+{('PP', 4, 6), ('FROM', 2, 3), ('FLIGHTS', 1, 2), ('WHAT', 0, 1), ('TO', 4, 5), ('WHNPBAR', 2, 6), ('NP', 3, 4), ('WHNP', 0, 2), ('TOP', 0, 7), ('PUN', 6, 7), ('NP', 5, 6), ('WHNP', 0, 6), ('PP', 2, 4)}
+P:1.0 R:1.0 F:1.0
+
+input:  ['what', 'flights', 'from', 'tampa', 'to', 'cincinnati', '.']
+target:     ('TOP', ('WHNP', ('WHNP', ('WHAT', 'what'), ('FLIGHTS', 'flights')), ('WHNPBAR', ('PP', ('FROM', 'from'), ('NP', 'tampa')), ('PP', ('TO', 'to'), ('NP', 'cincinnati')))), ('PUN', '.'))
+predicted:  ('TOP', ('WHNP', ('WHNP', ('WHAT', 'what'), ('FLIGHTS', 'flights')), ('WHNPBAR', ('PP', ('FROM', 'from'), ('NP', 'tampa')), ('PP', ('TO', 'to'), ('NP', 'cincinnati')))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+what
+enter if str
+flights
+enter if str
+from
+enter if str
+tampa
+enter if str
+to
+enter if str
+cincinnati
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+what
+enter if str
+flights
+enter if str
+from
+enter if str
+tampa
+enter if str
+to
+enter if str
+cincinnati
+enter if str
+.
+gold constants
+{('PP', 4, 6), ('FROM', 2, 3), ('FLIGHTS', 1, 2), ('WHAT', 0, 1), ('TO', 4, 5), ('WHNPBAR', 2, 6), ('NP', 3, 4), ('WHNP', 0, 2), ('TOP', 0, 7), ('PUN', 6, 7), ('NP', 5, 6), ('WHNP', 0, 6), ('PP', 2, 4)}
+test constants
+{('PP', 4, 6), ('FROM', 2, 3), ('FLIGHTS', 1, 2), ('WHAT', 0, 1), ('TO', 4, 5), ('WHNPBAR', 2, 6), ('NP', 3, 4), ('WHNP', 0, 2), ('TOP', 0, 7), ('PUN', 6, 7), ('NP', 5, 6), ('WHNP', 0, 6), ('PP', 2, 4)}
+P:1.0 R:1.0 F:1.0
+
+input:  ['which', 'of', 'these', 'leave', 'after', 'noon', 'and', 'stop', 'in', 'phoenix', '.']
+target:     ('TOP', ('SBARQ', ('WHNP', ('WHNP', 'which'), ('PP', ('OF', 'of'), ('NP', 'these'))), ('VP', ('VP', ('LEAVE', 'leave'), ('PP', ('AFTER', 'after'), ('NP', 'noon'))), ('VPBAR', ('AND', 'and'), ('VP', ('STOP', 'stop'), ('PP', ('IN', 'in'), ('NP', 'phoenix')))))), ('PUN', '.'))
+predicted:  ('TOP', ('SBARQ', ('WHNP', ('WHNP', 'which'), ('PP', ('OF', 'of'), ('NP', 'these'))), ('VP', ('LEAVE', 'leave'), ('VPBAR', ('PP', ('AFTER', 'after'), ('NP', 'noon')), ('VPBAR', ('AND', 'and'), ('VP', ('STOP', 'stop'), ('PP', ('IN', 'in'), ('NP', 'phoenix'))))))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+which
+enter if str
+of
+enter if str
+these
+enter if str
+leave
+enter if str
+after
+enter if str
+noon
+enter if str
+and
+enter if str
+stop
+enter if str
+in
+enter if str
+phoenix
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+which
+enter if str
+of
+enter if str
+these
+enter if str
+leave
+enter if str
+after
+enter if str
+noon
+enter if str
+and
+enter if str
+stop
+enter if str
+in
+enter if str
+phoenix
+enter if str
+.
+gold constants
+{('WHNP', 0, 3), ('PUN', 10, 11), ('NP', 5, 6), ('NP', 9, 10), ('WHNP', 0, 1), ('VPBAR', 6, 10), ('AND', 6, 7), ('NP', 2, 3), ('OF', 1, 2), ('SBARQ', 0, 10), ('VP', 7, 10), ('LEAVE', 3, 4), ('IN', 8, 9), ('PP', 1, 3), ('PP', 4, 6), ('PP', 8, 10), ('VP', 3, 10), ('AFTER', 4, 5), ('STOP', 7, 8), ('TOP', 0, 11), ('VP', 3, 6)}
+test constants
+{('WHNP', 0, 3), ('PUN', 10, 11), ('NP', 5, 6), ('NP', 9, 10), ('WHNP', 0, 1), ('VPBAR', 6, 10), ('AND', 6, 7), ('NP', 2, 3), ('OF', 1, 2), ('SBARQ', 0, 10), ('VP', 7, 10), ('LEAVE', 3, 4), ('IN', 8, 9), ('PP', 1, 3), ('VPBAR', 4, 10), ('PP', 4, 6), ('PP', 8, 10), ('VP', 3, 10), ('AFTER', 4, 5), ('STOP', 7, 8), ('TOP', 0, 11)}
+P:0.9523809523809523 R:0.9523809523809523 F:0.9523809523809523
+
+input:  ['flights', 'from', 'boston', 'to', 'pittsburgh', '.']
+target:     ('TOP', ('NP', ('NP', 'flights'), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', 'boston')), ('PP', ('TO', 'to'), ('NP', 'pittsburgh')))), ('PUN', '.'))
+predicted:  ('TOP', ('NP', ('NP', 'flights'), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', 'boston')), ('PP', ('TO', 'to'), ('NP', 'pittsburgh')))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+flights
+enter if str
+from
+enter if str
+boston
+enter if str
+to
+enter if str
+pittsburgh
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+flights
+enter if str
+from
+enter if str
+boston
+enter if str
+to
+enter if str
+pittsburgh
+enter if str
+.
+gold constants
+{('NP', 0, 5), ('NPBAR', 1, 5), ('PP', 3, 5), ('FROM', 1, 2), ('TOP', 0, 6), ('PP', 1, 3), ('TO', 3, 4), ('NP', 4, 5), ('PUN', 5, 6), ('NP', 2, 3), ('NP', 0, 1)}
+test constants
+{('NP', 0, 5), ('NPBAR', 1, 5), ('PP', 3, 5), ('FROM', 1, 2), ('TOP', 0, 6), ('PP', 1, 3), ('TO', 3, 4), ('NP', 4, 5), ('PUN', 5, 6), ('NP', 2, 3), ('NP', 0, 1)}
+P:1.0 R:1.0 F:1.0
+
+input:  ['i', 'prefer', 'a', 'morning', 'flight', '.']
+target:     ('TOP', ('S', ('NP', 'i'), ('VP', ('PREFER', 'prefer'), ('NP', ('A', 'a'), ('NPBAR', ('MORNING', 'morning'), ('FLIGHT', 'flight'))))), ('PUN', '.'))
+predicted:  ()
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+i
+enter if str
+prefer
+enter if str
+a
+enter if str
+morning
+enter if str
+flight
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if not tree
+gold constants
+{('S', 0, 5), ('MORNING', 3, 4), ('NP', 2, 5), ('TOP', 0, 6), ('A', 2, 3), ('VP', 1, 5), ('NPBAR', 3, 5), ('FLIGHT', 4, 5), ('PUN', 5, 6), ('NP', 0, 1), ('PREFER', 1, 2)}
+test constants
+set()
+P:0.0 R:0.0 F:0.0
+
+input:  ['show', 'me', 'the', 'first', 'flight', 'that', 'arrives', 'in', 'toronto', 'from', 'cincinnati', '.']
+target:     ('TOP', ('VP', ('SHOW', 'show'), ('VPBAR', ('NP', 'me'), ('NP', ('NP', ('THE', 'the'), ('NPBAR', ('FIRST', 'first'), ('FLIGHT', 'flight'))), ('NPBAR', ('SBAR', ('WHNP', 'that'), ('VP', ('ARRIVES', 'arrives'), ('PP', ('IN', 'in'), ('NP', 'toronto')))), ('PP', ('FROM', 'from'), ('NP', 'cincinnati')))))), ('PUN', '.'))
+predicted:  ('TOP', ('VP', ('SHOW', 'show'), ('VPBAR', ('NP', 'me'), ('NP', ('THE', 'the'), ('NPBAR', ('ADVP', 'first'), ('NP', ('NP', 'flight'), ('SBAR', ('WHNP', 'that'), ('VP', ('ARRIVES', 'arrives'), ('VPBAR', ('PP', ('IN', 'in'), ('NP', 'toronto')), ('PP', ('FROM', 'from'), ('NP', 'cincinnati')))))))))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+show
+enter if str
+me
+enter if str
+the
+enter if str
+first
+enter if str
+flight
+enter if str
+that
+enter if str
+arrives
+enter if str
+in
+enter if str
+toronto
+enter if str
+from
+enter if str
+cincinnati
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+show
+enter if str
+me
+enter if str
+the
+enter if str
+first
+enter if str
+flight
+enter if str
+that
+enter if str
+arrives
+enter if str
+in
+enter if str
+toronto
+enter if str
+from
+enter if str
+cincinnati
+enter if str
+.
+gold constants
+{('NP', 2, 11), ('FROM', 9, 10), ('THE', 2, 3), ('NPBAR', 5, 11), ('TOP', 0, 12), ('NPBAR', 3, 5), ('FLIGHT', 4, 5), ('NP', 1, 2), ('PUN', 11, 12), ('IN', 7, 8), ('NP', 10, 11), ('VP', 0, 11), ('NP', 2, 5), ('PP', 7, 9), ('SBAR', 5, 9), ('PP', 9, 11), ('WHNP', 5, 6), ('SHOW', 0, 1), ('VPBAR', 1, 11), ('FIRST', 3, 4), ('VP', 6, 9), ('NP', 8, 9), ('ARRIVES', 6, 7)}
+test constants
+{('NP', 2, 11), ('FROM', 9, 10), ('THE', 2, 3), ('NP', 4, 5), ('TOP', 0, 12), ('NP', 1, 2), ('PUN', 11, 12), ('NP', 4, 11), ('IN', 7, 8), ('NP', 10, 11), ('NPBAR', 3, 11), ('VP', 0, 11), ('VPBAR', 7, 11), ('PP', 7, 9), ('PP', 9, 11), ('SBAR', 5, 11), ('WHNP', 5, 6), ('VP', 6, 11), ('SHOW', 0, 1), ('VPBAR', 1, 11), ('NP', 8, 9), ('ARRIVES', 6, 7), ('ADVP', 3, 4)}
+P:0.6956521739130435 R:0.6956521739130435 F:0.6956521739130435
+
+input:  ['which', 'of', 'these', 'is', 'last', '.']
+target:     ('TOP', ('SBARQ', ('WHNP', ('WHNP', 'which'), ('PP', ('OF', 'of'), ('NP', 'these'))), ('VP', ('IS', 'is'), ('ADJP', 'last'))), ('PUN', '.'))
+predicted:  ('TOP', ('SBARQ', ('WHNP', ('WHNP', 'which'), ('PP', ('OF', 'of'), ('NP', 'these'))), ('VP', ('IS', 'is'), ('ADJP', 'last'))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+which
+enter if str
+of
+enter if str
+these
+enter if str
+is
+enter if str
+last
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+which
+enter if str
+of
+enter if str
+these
+enter if str
+is
+enter if str
+last
+enter if str
+.
+gold constants
+{('IS', 3, 4), ('VP', 3, 5), ('SBARQ', 0, 5), ('WHNP', 0, 3), ('TOP', 0, 6), ('PP', 1, 3), ('ADJP', 4, 5), ('PUN', 5, 6), ('NP', 2, 3), ('WHNP', 0, 1), ('OF', 1, 2)}
+test constants
+{('IS', 3, 4), ('VP', 3, 5), ('SBARQ', 0, 5), ('WHNP', 0, 3), ('TOP', 0, 6), ('PP', 1, 3), ('ADJP', 4, 5), ('PUN', 5, 6), ('NP', 2, 3), ('WHNP', 0, 1), ('OF', 1, 2)}
+P:1.0 R:1.0 F:1.0
+
+input:  ['i', "'d", 'like', 'a', 'flight', 'tomorrow', 'from', 'san', 'diego', 'to', 'toronto', '.']
+target:     ('TOP', ('S', ('NP', 'i'), ('VP', ("'D", "'d"), ('VP', ('LIKE', 'like'), ('NP', ('NP', ('A', 'a'), ('FLIGHT', 'flight')), ('NPBAR', ('NP', 'tomorrow'), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', ('SAN', 'san'), ('DIEGO', 'diego'))), ('PP', ('TO', 'to'), ('NP', 'toronto')))))))), ('PUN', '.'))
+predicted:  ('TOP', ('S', ('NP', 'i'), ('VP', ("'D", "'d"), ('VP', ('LIKE', 'like'), ('NP', ('NP', ('NP', ('A', 'a'), ('FLIGHT', 'flight')), ('NP', 'tomorrow')), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', ('SAN', 'san'), ('DIEGO', 'diego'))), ('PP', ('TO', 'to'), ('NP', 'toronto'))))))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+i
+enter if str
+'d
+enter if str
+like
+enter if str
+a
+enter if str
+flight
+enter if str
+tomorrow
+enter if str
+from
+enter if str
+san
+enter if str
+diego
+enter if str
+to
+enter if str
+toronto
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+i
+enter if str
+'d
+enter if str
+like
+enter if str
+a
+enter if str
+flight
+enter if str
+tomorrow
+enter if str
+from
+enter if str
+san
+enter if str
+diego
+enter if str
+to
+enter if str
+toronto
+enter if str
+.
+gold constants
+{('FROM', 6, 7), ('NPBAR', 6, 11), ('NPBAR', 5, 11), ('TOP', 0, 12), ('FLIGHT', 4, 5), ('NP', 5, 6), ('NP', 3, 11), ('PUN', 11, 12), ('NP', 10, 11), ('NP', 7, 9), ("'D", 1, 2), ('LIKE', 2, 3), ('A', 3, 4), ('PP', 9, 11), ('DIEGO', 8, 9), ('NP', 0, 1), ('S', 0, 11), ('SAN', 7, 8), ('TO', 9, 10), ('VP', 1, 11), ('VP', 2, 11), ('NP', 3, 5), ('PP', 6, 9)}
+test constants
+{('FROM', 6, 7), ('NPBAR', 6, 11), ('TOP', 0, 12), ('FLIGHT', 4, 5), ('NP', 5, 6), ('NP', 3, 11), ('PUN', 11, 12), ('NP', 10, 11), ('NP', 7, 9), ("'D", 1, 2), ('LIKE', 2, 3), ('A', 3, 4), ('PP', 9, 11), ('DIEGO', 8, 9), ('NP', 0, 1), ('NP', 3, 6), ('S', 0, 11), ('SAN', 7, 8), ('TO', 9, 10), ('VP', 1, 11), ('VP', 2, 11), ('NP', 3, 5), ('PP', 6, 9)}
+P:0.9565217391304348 R:0.9565217391304348 F:0.9565217391304348
+
+input:  ['which', 'of', 'those', 'leave', 'before', 'eight', 'a.m', '.']
+target:     ('TOP', ('SBARQ', ('WHNP', ('WHNP', 'which'), ('PP', ('OF', 'of'), ('NP', 'those'))), ('VP', ('LEAVE', 'leave'), ('PP', ('BEFORE', 'before'), ('NP', ('EIGHT', 'eight'), ('A.M', 'a.m'))))), ('PUN', '.'))
+predicted:  ()
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+which
+enter if str
+of
+enter if str
+those
+enter if str
+leave
+enter if str
+before
+enter if str
+eight
+enter if str
+a.m
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if not tree
+gold constants
+{('TOP', 0, 8), ('PP', 4, 7), ('VP', 3, 7), ('WHNP', 0, 3), ('LEAVE', 3, 4), ('PP', 1, 3), ('BEFORE', 4, 5), ('EIGHT', 5, 6), ('PUN', 7, 8), ('NP', 2, 3), ('SBARQ', 0, 7), ('WHNP', 0, 1), ('A.M', 6, 7), ('OF', 1, 2), ('NP', 5, 7)}
+test constants
+set()
+P:0.0 R:0.0 F:0.0
+
+input:  ['what', 'airlines', 'from', 'washington', 'd', 'c', 'to', 'columbus', '.']
+target:     ('TOP', ('FRAG', ('WHNP', ('WHAT', 'what'), ('AIRLINES', 'airlines')), ('FRAGBAR', ('PP', ('FROM', 'from'), ('NP', ('NP', 'washington'), ('NP', ('D', 'd'), ('C', 'c')))), ('PP', ('TO', 'to'), ('NP', 'columbus')))), ('PUN', '.'))
+predicted:  ('TOP', ('WHNP', ('WHNP', ('WHAT', 'what'), ('AIRLINES', 'airlines')), ('WHNPBAR', ('PP', ('FROM', 'from'), ('NP', ('NP', 'washington'), ('NP', ('D', 'd'), ('C', 'c')))), ('PP', ('TO', 'to'), ('NP', 'columbus')))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+what
+enter if str
+airlines
+enter if str
+from
+enter if str
+washington
+enter if str
+d
+enter if str
+c
+enter if str
+to
+enter if str
+columbus
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+what
+enter if str
+airlines
+enter if str
+from
+enter if str
+washington
+enter if str
+d
+enter if str
+c
+enter if str
+to
+enter if str
+columbus
+enter if str
+.
+gold constants
+{('FROM', 2, 3), ('C', 5, 6), ('NP', 3, 6), ('PUN', 8, 9), ('TOP', 0, 9), ('WHAT', 0, 1), ('PP', 2, 6), ('NP', 4, 6), ('TO', 6, 7), ('AIRLINES', 1, 2), ('D', 4, 5), ('NP', 3, 4), ('WHNP', 0, 2), ('PP', 6, 8), ('FRAGBAR', 2, 8), ('NP', 7, 8), ('FRAG', 0, 8)}
+test constants
+{('FROM', 2, 3), ('C', 5, 6), ('NP', 3, 6), ('PUN', 8, 9), ('WHAT', 0, 1), ('PP', 2, 6), ('NP', 4, 6), ('TO', 6, 7), ('AIRLINES', 1, 2), ('D', 4, 5), ('NP', 3, 4), ('WHNP', 0, 2), ('PP', 6, 8), ('WHNPBAR', 2, 8), ('WHNP', 0, 8), ('NP', 7, 8), ('TOP', 0, 9)}
+P:0.8823529411764706 R:0.8823529411764706 F:0.8823529411764706
+
+input:  ['what', 'flights', 'from', 'chicago', 'to', 'kansas', 'city', 'in', 'the', 'morning', '.']
+target:     ('TOP', ('WHNP', ('NP', ('WHAT', 'what'), ('FLIGHTS', 'flights')), ('WHNPBAR', ('PP', ('FROM', 'from'), ('NP', 'chicago')), ('WHNPBAR', ('PP', ('TO', 'to'), ('NP', ('KANSAS', 'kansas'), ('CITY', 'city'))), ('PP', ('IN', 'in'), ('NP', ('THE', 'the'), ('MORNING', 'morning')))))), ('PUN', '.'))
+predicted:  ('TOP', ('WHNP', ('WHNP', ('WHAT', 'what'), ('FLIGHTS', 'flights')), ('WHNPBAR', ('PP', ('FROM', 'from'), ('NP', 'chicago')), ('WHNPBAR', ('PP', ('TO', 'to'), ('NP', ('KANSAS', 'kansas'), ('CITY', 'city'))), ('PP', ('IN', 'in'), ('NP', ('THE', 'the'), ('MORNING', 'morning')))))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+what
+enter if str
+flights
+enter if str
+from
+enter if str
+chicago
+enter if str
+to
+enter if str
+kansas
+enter if str
+city
+enter if str
+in
+enter if str
+the
+enter if str
+morning
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+what
+enter if str
+flights
+enter if str
+from
+enter if str
+chicago
+enter if str
+to
+enter if str
+kansas
+enter if str
+city
+enter if str
+in
+enter if str
+the
+enter if str
+morning
+enter if str
+.
+gold constants
+{('FROM', 2, 3), ('PUN', 10, 11), ('CITY', 6, 7), ('NP', 5, 7), ('MORNING', 9, 10), ('TO', 4, 5), ('IN', 7, 8), ('PP', 2, 4), ('PP', 7, 10), ('KANSAS', 5, 6), ('WHNPBAR', 2, 10), ('FLIGHTS', 1, 2), ('WHNP', 0, 10), ('NP', 0, 2), ('NP', 8, 10), ('THE', 8, 9), ('PP', 4, 7), ('WHAT', 0, 1), ('TOP', 0, 11), ('NP', 3, 4), ('WHNPBAR', 4, 10)}
+test constants
+{('FROM', 2, 3), ('WHNP', 0, 2), ('PUN', 10, 11), ('CITY', 6, 7), ('NP', 5, 7), ('MORNING', 9, 10), ('TO', 4, 5), ('IN', 7, 8), ('PP', 2, 4), ('PP', 7, 10), ('KANSAS', 5, 6), ('WHNPBAR', 2, 10), ('FLIGHTS', 1, 2), ('WHNP', 0, 10), ('NP', 8, 10), ('THE', 8, 9), ('PP', 4, 7), ('WHAT', 0, 1), ('TOP', 0, 11), ('NP', 3, 4), ('WHNPBAR', 4, 10)}
+P:0.9523809523809523 R:0.9523809523809523 F:0.9523809523809523
+
+input:  ['what', 'type', 'of', 'aircraft', 'is', 'used', 'on', 'those', 'flights', '.']
+target:     ('TOP', ('SBARQ', ('WHNP', ('WHNP', ('WHAT', 'what'), ('TYPE', 'type')), ('PP', ('OF', 'of'), ('NP', 'aircraft'))), ('VP', ('IS', 'is'), ('VP', ('USED', 'used'), ('PP', ('ON', 'on'), ('NP', ('THOSE', 'those'), ('FLIGHTS', 'flights')))))), ('PUN', '.'))
+predicted:  ()
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+what
+enter if str
+type
+enter if str
+of
+enter if str
+aircraft
+enter if str
+is
+enter if str
+used
+enter if str
+on
+enter if str
+those
+enter if str
+flights
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if not tree
+gold constants
+{('WHNP', 0, 4), ('WHNP', 0, 2), ('VP', 4, 9), ('FLIGHTS', 8, 9), ('TYPE', 1, 2), ('PUN', 9, 10), ('USED', 5, 6), ('PP', 2, 4), ('OF', 2, 3), ('NP', 7, 9), ('THOSE', 7, 8), ('IS', 4, 5), ('ON', 6, 7), ('VP', 5, 9), ('SBARQ', 0, 9), ('WHAT', 0, 1), ('TOP', 0, 10), ('NP', 3, 4), ('PP', 6, 9)}
+test constants
+set()
+P:0.0 R:0.0 F:0.0
+
+input:  ['price', 'of', 'flight', 'a', 'a', 'one', 'thousand', 'three', 'hundred', 'nineteen', '.']
+target:     ('TOP', ('NP', ('NP', 'price'), ('PP', ('OF', 'of'), ('NP', ('FLIGHT', 'flight'), ('NPBAR', ('A', 'a'), ('NPBAR', ('A', 'a'), ('NPBAR', ('ONE', 'one'), ('NPBAR', ('THOUSAND', 'thousand'), ('NPBAR', ('THREE', 'three'), ('NPBAR', ('HUNDRED', 'hundred'), ('NINETEEN', 'nineteen')))))))))), ('PUN', '.'))
+predicted:  ()
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+price
+enter if str
+of
+enter if str
+flight
+enter if str
+a
+enter if str
+a
+enter if str
+one
+enter if str
+thousand
+enter if str
+three
+enter if str
+hundred
+enter if str
+nineteen
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if not tree
+gold constants
+{('NPBAR', 5, 10), ('NP', 2, 10), ('THOUSAND', 6, 7), ('NP', 0, 10), ('PP', 1, 10), ('A', 4, 5), ('NPBAR', 6, 10), ('PUN', 10, 11), ('NPBAR', 8, 10), ('HUNDRED', 8, 9), ('NINETEEN', 9, 10), ('THREE', 7, 8), ('NPBAR', 3, 10), ('FLIGHT', 2, 3), ('OF', 1, 2), ('A', 3, 4), ('ONE', 5, 6), ('NPBAR', 7, 10), ('NP', 0, 1), ('TOP', 0, 11), ('NPBAR', 4, 10)}
+test constants
+set()
+P:0.0 R:0.0 F:0.0
+
+input:  ['show', 'me', 'the', 'ground', 'transportation', 'available', '.']
+target:     ('TOP', ('VP', ('SHOW', 'show'), ('VPBAR', ('NP', 'me'), ('NP', ('NP', ('THE', 'the'), ('NPBAR', ('GROUND', 'ground'), ('TRANSPORTATION', 'transportation'))), ('ADJP', 'available')))), ('PUN', '.'))
+predicted:  ()
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+show
+enter if str
+me
+enter if str
+the
+enter if str
+ground
+enter if str
+transportation
+enter if str
+available
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if not tree
+gold constants
+{('GROUND', 3, 4), ('TRANSPORTATION', 4, 5), ('NP', 2, 5), ('THE', 2, 3), ('VP', 0, 6), ('ADJP', 5, 6), ('NPBAR', 3, 5), ('TOP', 0, 7), ('PUN', 6, 7), ('NP', 1, 2), ('SHOW', 0, 1), ('NP', 2, 6), ('VPBAR', 1, 6)}
+test constants
+set()
+P:0.0 R:0.0 F:0.0
+
+input:  ['which', 'is', 'the', 'latest', '.']
+target:     ('TOP', ('SBARQ', ('WHNP', 'which'), ('VP', ('IS', 'is'), ('NP', ('THE', 'the'), ('LATEST', 'latest')))), ('PUN', '.'))
+predicted:  ()
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+which
+enter if str
+is
+enter if str
+the
+enter if str
+latest
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if not tree
+gold constants
+{('LATEST', 3, 4), ('TOP', 0, 5), ('SBARQ', 0, 4), ('IS', 1, 2), ('THE', 2, 3), ('NP', 2, 4), ('PUN', 4, 5), ('VP', 1, 4), ('WHNP', 0, 1)}
+test constants
+set()
+P:0.0 R:0.0 F:0.0
+
+input:  ['what', 'about', 'after', 'seven', 'p.m', '.']
+target:     ('TOP', ('FRAG', ('X', ('WHAT', 'what'), ('ABOUT', 'about')), ('PP', ('AFTER', 'after'), ('NP', ('SEVEN', 'seven'), ('P.M', 'p.m')))), ('PUN', '.'))
+predicted:  ('TOP', ('FRAG', ('X', ('WHAT', 'what'), ('ABOUT', 'about')), ('PP', ('AFTER', 'after'), ('NP', ('SEVEN', 'seven'), ('P.M', 'p.m')))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+what
+enter if str
+about
+enter if str
+after
+enter if str
+seven
+enter if str
+p.m
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+what
+enter if str
+about
+enter if str
+after
+enter if str
+seven
+enter if str
+p.m
+enter if str
+.
+gold constants
+{('PP', 2, 5), ('WHAT', 0, 1), ('AFTER', 2, 3), ('TOP', 0, 6), ('X', 0, 2), ('P.M', 4, 5), ('PUN', 5, 6), ('ABOUT', 1, 2), ('FRAG', 0, 5), ('NP', 3, 5), ('SEVEN', 3, 4)}
+test constants
+{('PP', 2, 5), ('WHAT', 0, 1), ('AFTER', 2, 3), ('TOP', 0, 6), ('X', 0, 2), ('P.M', 4, 5), ('PUN', 5, 6), ('ABOUT', 1, 2), ('FRAG', 0, 5), ('NP', 3, 5), ('SEVEN', 3, 4)}
+P:1.0 R:1.0 F:1.0
+
+input:  ['what', 'flights', 'from', 'salt', 'lake', 'city', 'to', 'las', 'vegas', '.']
+target:     ('TOP', ('FRAG', ('WHNP', ('WHNP', ('WHAT', 'what'), ('FLIGHTS', 'flights')), ('PP', ('FROM', 'from'), ('NP', ('SALT', 'salt'), ('NPBAR', ('LAKE', 'lake'), ('CITY', 'city'))))), ('PP', ('TO', 'to'), ('NP', ('LAS', 'las'), ('VEGAS', 'vegas')))), ('PUN', '.'))
+predicted:  ('TOP', ('WHNP', ('WHNP', ('WHAT', 'what'), ('FLIGHTS', 'flights')), ('WHNPBAR', ('PP', ('FROM', 'from'), ('NP', ('SALT', 'salt'), ('NPBAR', ('LAKE', 'lake'), ('CITY', 'city')))), ('PP', ('TO', 'to'), ('NP', ('LAS', 'las'), ('VEGAS', 'vegas'))))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+what
+enter if str
+flights
+enter if str
+from
+enter if str
+salt
+enter if str
+lake
+enter if str
+city
+enter if str
+to
+enter if str
+las
+enter if str
+vegas
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+what
+enter if str
+flights
+enter if str
+from
+enter if str
+salt
+enter if str
+lake
+enter if str
+city
+enter if str
+to
+enter if str
+las
+enter if str
+vegas
+enter if str
+.
+gold constants
+{('FROM', 2, 3), ('WHNP', 0, 2), ('LAS', 7, 8), ('NPBAR', 4, 6), ('PUN', 9, 10), ('NP', 7, 9), ('FLIGHTS', 1, 2), ('SALT', 3, 4), ('PP', 2, 6), ('VEGAS', 8, 9), ('FRAG', 0, 9), ('NP', 3, 6), ('WHAT', 0, 1), ('TOP', 0, 10), ('TO', 6, 7), ('WHNP', 0, 6), ('CITY', 5, 6), ('PP', 6, 9), ('LAKE', 4, 5)}
+test constants
+{('FROM', 2, 3), ('WHNP', 0, 2), ('LAS', 7, 8), ('NPBAR', 4, 6), ('PUN', 9, 10), ('NP', 7, 9), ('FLIGHTS', 1, 2), ('SALT', 3, 4), ('PP', 2, 6), ('VEGAS', 8, 9), ('WHNP', 0, 9), ('WHNPBAR', 2, 9), ('NP', 3, 6), ('WHAT', 0, 1), ('TOP', 0, 10), ('TO', 6, 7), ('CITY', 5, 6), ('PP', 6, 9), ('LAKE', 4, 5)}
+P:0.8947368421052632 R:0.8947368421052632 F:0.8947368421052632
+
+input:  ['flights', 'after', 'twelve', 'hundred', 'hours', '.']
+target:     ('TOP', ('NP', ('NP', 'flights'), ('PP', ('AFTER', 'after'), ('NP', ('TWELVE', 'twelve'), ('NPBAR', ('HUNDRED', 'hundred'), ('HOURS', 'hours'))))), ('PUN', '.'))
+predicted:  ('TOP', ('FRAG', ('NP', 'flights'), ('PP', ('AFTER', 'after'), ('NP', ('TWELVE', 'twelve'), ('NPBAR', ('HUNDRED', 'hundred'), ('HOURS', 'hours'))))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+flights
+enter if str
+after
+enter if str
+twelve
+enter if str
+hundred
+enter if str
+hours
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+flights
+enter if str
+after
+enter if str
+twelve
+enter if str
+hundred
+enter if str
+hours
+enter if str
+.
+gold constants
+{('NP', 0, 5), ('HUNDRED', 3, 4), ('NP', 2, 5), ('AFTER', 1, 2), ('TOP', 0, 6), ('NPBAR', 3, 5), ('PUN', 5, 6), ('TWELVE', 2, 3), ('HOURS', 4, 5), ('NP', 0, 1), ('PP', 1, 5)}
+test constants
+{('HUNDRED', 3, 4), ('NP', 2, 5), ('AFTER', 1, 2), ('TOP', 0, 6), ('NPBAR', 3, 5), ('PUN', 5, 6), ('FRAG', 0, 5), ('TWELVE', 2, 3), ('HOURS', 4, 5), ('NP', 0, 1), ('PP', 1, 5)}
+P:0.9090909090909091 R:0.9090909090909091 F:0.9090909090909091
+
+input:  ['what', 'is', 'the', 'price', 'of', 'united', 'airlines', 'flight', 'nine', 'seven', '.']
+target:     ('TOP', ('SBARQ', ('WHNP', 'what'), ('SQ', ('IS', 'is'), ('NP', ('NP', ('THE', 'the'), ('PRICE', 'price')), ('PP', ('OF', 'of'), ('NP', ('UNITED', 'united'), ('NPBAR', ('AIRLINES', 'airlines'), ('NPBAR', ('FLIGHT', 'flight'), ('NPBAR', ('NINE', 'nine'), ('SEVEN', 'seven'))))))))), ('PUN', '.'))
+predicted:  ('TOP', ('SBARQ', ('WHNP', 'what'), ('SQ', ('IS', 'is'), ('NP', ('NP', ('THE', 'the'), ('PRICE', 'price')), ('NPBAR', ('PP', ('OF', 'of'), ('NP', ('UNITED', 'united'), ('AIRLINES', 'airlines'))), ('NPBAR', ('FLIGHT', 'flight'), ('NPBAR', ('NINE', 'nine'), ('SEVEN', 'seven'))))))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+what
+enter if str
+is
+enter if str
+the
+enter if str
+price
+enter if str
+of
+enter if str
+united
+enter if str
+airlines
+enter if str
+flight
+enter if str
+nine
+enter if str
+seven
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+what
+enter if str
+is
+enter if str
+the
+enter if str
+price
+enter if str
+of
+enter if str
+united
+enter if str
+airlines
+enter if str
+flight
+enter if str
+nine
+enter if str
+seven
+enter if str
+.
+gold constants
+{('NINE', 8, 9), ('SQ', 1, 10), ('NP', 2, 10), ('THE', 2, 3), ('NPBAR', 6, 10), ('UNITED', 5, 6), ('PUN', 10, 11), ('WHNP', 0, 1), ('OF', 4, 5), ('FLIGHT', 7, 8), ('NPBAR', 8, 10), ('AIRLINES', 6, 7), ('PP', 4, 10), ('SEVEN', 9, 10), ('SBARQ', 0, 10), ('NP', 2, 4), ('NPBAR', 7, 10), ('PRICE', 3, 4), ('IS', 1, 2), ('TOP', 0, 11), ('NP', 5, 10)}
+test constants
+{('NINE', 8, 9), ('SQ', 1, 10), ('NP', 2, 10), ('THE', 2, 3), ('UNITED', 5, 6), ('PUN', 10, 11), ('WHNP', 0, 1), ('OF', 4, 5), ('NP', 5, 7), ('FLIGHT', 7, 8), ('NPBAR', 8, 10), ('AIRLINES', 6, 7), ('SEVEN', 9, 10), ('SBARQ', 0, 10), ('NP', 2, 4), ('NPBAR', 7, 10), ('PRICE', 3, 4), ('PP', 4, 7), ('IS', 1, 2), ('TOP', 0, 11), ('NPBAR', 4, 10)}
+P:0.8571428571428571 R:0.8571428571428571 F:0.8571428571428571
+
+input:  ['cheapest', 'airfare', 'from', 'orlando', 'to', 'tacoma', '.']
+target:     ('TOP', ('NP', ('NP', ('CHEAPEST', 'cheapest'), ('AIRFARE', 'airfare')), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', 'orlando')), ('PP', ('TO', 'to'), ('NP', 'tacoma')))), ('PUN', '.'))
+predicted:  ('TOP', ('NP', ('NP', ('CHEAPEST', 'cheapest'), ('AIRFARE', 'airfare')), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', 'orlando')), ('PP', ('TO', 'to'), ('NP', 'tacoma')))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+cheapest
+enter if str
+airfare
+enter if str
+from
+enter if str
+orlando
+enter if str
+to
+enter if str
+tacoma
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+cheapest
+enter if str
+airfare
+enter if str
+from
+enter if str
+orlando
+enter if str
+to
+enter if str
+tacoma
+enter if str
+.
+gold constants
+{('NPBAR', 2, 6), ('PP', 4, 6), ('FROM', 2, 3), ('AIRFARE', 1, 2), ('CHEAPEST', 0, 1), ('TO', 4, 5), ('NP', 3, 4), ('NP', 0, 2), ('TOP', 0, 7), ('PUN', 6, 7), ('NP', 5, 6), ('NP', 0, 6), ('PP', 2, 4)}
+test constants
+{('NPBAR', 2, 6), ('PP', 4, 6), ('FROM', 2, 3), ('AIRFARE', 1, 2), ('CHEAPEST', 0, 1), ('TO', 4, 5), ('NP', 3, 4), ('NP', 0, 2), ('TOP', 0, 7), ('PUN', 6, 7), ('NP', 5, 6), ('NP', 0, 6), ('PP', 2, 4)}
+P:1.0 R:1.0 F:1.0
+
+input:  ['price', 'of', 'flight', 'from', 'cleveland', 'to', 'nashville', '.']
+target:     ('TOP', ('NP', ('NP', 'price'), ('PP', ('OF', 'of'), ('NP', ('NP', 'flight'), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', 'cleveland')), ('PP', ('TO', 'to'), ('NP', 'nashville')))))), ('PUN', '.'))
+predicted:  ('TOP', ('FRAG', ('NP', 'price'), ('PP', ('OF', 'of'), ('NP', ('FLIGHT', 'flight'), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', 'cleveland')), ('PP', ('TO', 'to'), ('NP', 'nashville')))))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+price
+enter if str
+of
+enter if str
+flight
+enter if str
+from
+enter if str
+cleveland
+enter if str
+to
+enter if str
+nashville
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+price
+enter if str
+of
+enter if str
+flight
+enter if str
+from
+enter if str
+cleveland
+enter if str
+to
+enter if str
+nashville
+enter if str
+.
+gold constants
+{('TOP', 0, 8), ('NPBAR', 3, 7), ('PP', 3, 5), ('FROM', 3, 4), ('PP', 1, 7), ('NP', 6, 7), ('PUN', 7, 8), ('PP', 5, 7), ('NP', 0, 7), ('NP', 4, 5), ('NP', 2, 7), ('NP', 2, 3), ('TO', 5, 6), ('NP', 0, 1), ('OF', 1, 2)}
+test constants
+{('TOP', 0, 8), ('NPBAR', 3, 7), ('FROM', 3, 4), ('PP', 1, 7), ('NP', 6, 7), ('FRAG', 0, 7), ('PP', 5, 7), ('PUN', 7, 8), ('NP', 4, 5), ('NP', 2, 7), ('PP', 3, 5), ('TO', 5, 6), ('FLIGHT', 2, 3), ('NP', 0, 1), ('OF', 1, 2)}
+P:0.8666666666666667 R:0.8666666666666667 F:0.8666666666666667
+
+input:  ['what', 'is', 'the', 'price', '.']
+target:     ('TOP', ('SBARQ', ('WHNP', 'what'), ('SQ', ('IS', 'is'), ('NP', ('THE', 'the'), ('PRICE', 'price')))), ('PUN', '.'))
+predicted:  ('TOP', ('SBARQ', ('WHNP', 'what'), ('SQ', ('IS', 'is'), ('NP', ('THE', 'the'), ('PRICE', 'price')))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+what
+enter if str
+is
+enter if str
+the
+enter if str
+price
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+what
+enter if str
+is
+enter if str
+the
+enter if str
+price
+enter if str
+.
+gold constants
+{('SQ', 1, 4), ('TOP', 0, 5), ('SBARQ', 0, 4), ('IS', 1, 2), ('THE', 2, 3), ('NP', 2, 4), ('PUN', 4, 5), ('PRICE', 3, 4), ('WHNP', 0, 1)}
+test constants
+{('SQ', 1, 4), ('TOP', 0, 5), ('SBARQ', 0, 4), ('IS', 1, 2), ('THE', 2, 3), ('NP', 2, 4), ('PUN', 4, 5), ('PRICE', 3, 4), ('WHNP', 0, 1)}
+P:1.0 R:1.0 F:1.0
+
+input:  ['what', 'is', 'the', 'price', 'of', 'flights', 'from', 'indianapolis', 'to', 'memphis', '.']
+target:     ('TOP', ('SBARQ', ('WHNP', 'what'), ('SQ', ('IS', 'is'), ('NP', ('NP', ('THE', 'the'), ('PRICE', 'price')), ('PP', ('OF', 'of'), ('NP', ('NP', 'flights'), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', 'indianapolis')), ('PP', ('TO', 'to'), ('NP', 'memphis')))))))), ('PUN', '.'))
+predicted:  ('TOP', ('SBARQ', ('WHNP', 'what'), ('SQ', ('IS', 'is'), ('NP', ('NP', ('THE', 'the'), ('PRICE', 'price')), ('NPBAR', ('PP', ('OF', 'of'), ('NP', 'flights')), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', 'indianapolis')), ('PP', ('TO', 'to'), ('NP', 'memphis'))))))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+what
+enter if str
+is
+enter if str
+the
+enter if str
+price
+enter if str
+of
+enter if str
+flights
+enter if str
+from
+enter if str
+indianapolis
+enter if str
+to
+enter if str
+memphis
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+what
+enter if str
+is
+enter if str
+the
+enter if str
+price
+enter if str
+of
+enter if str
+flights
+enter if str
+from
+enter if str
+indianapolis
+enter if str
+to
+enter if str
+memphis
+enter if str
+.
+gold constants
+{('SQ', 1, 10), ('FROM', 6, 7), ('NP', 2, 10), ('THE', 2, 3), ('NPBAR', 6, 10), ('PUN', 10, 11), ('NP', 9, 10), ('NP', 5, 6), ('WHNP', 0, 1), ('OF', 4, 5), ('TO', 8, 9), ('PP', 4, 10), ('NP', 7, 8), ('SBARQ', 0, 10), ('NP', 2, 4), ('PRICE', 3, 4), ('PP', 8, 10), ('IS', 1, 2), ('TOP', 0, 11), ('PP', 6, 8), ('NP', 5, 10)}
+test constants
+{('SQ', 1, 10), ('FROM', 6, 7), ('NP', 2, 10), ('THE', 2, 3), ('NPBAR', 6, 10), ('PUN', 10, 11), ('NP', 9, 10), ('NP', 5, 6), ('WHNP', 0, 1), ('OF', 4, 5), ('TO', 8, 9), ('NP', 7, 8), ('SBARQ', 0, 10), ('NP', 2, 4), ('PRICE', 3, 4), ('PP', 4, 6), ('PP', 8, 10), ('IS', 1, 2), ('TOP', 0, 11), ('PP', 6, 8), ('NPBAR', 4, 10)}
+P:0.9047619047619048 R:0.9047619047619048 F:0.9047619047619048
+
+input:  ['show', 'me', 'the', 'flights', 'from', 'newark', 'new', 'jersey', 'to', 'ontario', 'international', 'next', 'saturday', '.']
+target:     ('TOP', ('VP', ('SHOW', 'show'), ('VPBAR', ('NP', 'me'), ('NP', ('NP', ('THE', 'the'), ('FLIGHTS', 'flights')), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', ('NP', 'newark'), ('NP', ('NEW', 'new'), ('JERSEY', 'jersey')))), ('NPBAR', ('PP', ('TO', 'to'), ('NP', ('ONTARIO', 'ontario'), ('INTERNATIONAL', 'international'))), ('NP', ('NEXT', 'next'), ('SATURDAY', 'saturday'))))))), ('PUN', '.'))
+predicted:  ()
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+show
+enter if str
+me
+enter if str
+the
+enter if str
+flights
+enter if str
+from
+enter if str
+newark
+enter if str
+new
+enter if str
+jersey
+enter if str
+to
+enter if str
+ontario
+enter if str
+international
+enter if str
+next
+enter if str
+saturday
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if not tree
+gold constants
+{('TOP', 0, 14), ('THE', 2, 3), ('NP', 2, 13), ('NP', 6, 8), ('NP', 5, 6), ('NP', 1, 2), ('VP', 0, 13), ('NP', 9, 11), ('FLIGHTS', 3, 4), ('ONTARIO', 9, 10), ('TO', 8, 9), ('NPBAR', 8, 13), ('INTERNATIONAL', 10, 11), ('VPBAR', 1, 13), ('PUN', 13, 14), ('PP', 4, 8), ('FROM', 4, 5), ('NPBAR', 4, 13), ('NP', 2, 4), ('NEXT', 11, 12), ('SHOW', 0, 1), ('JERSEY', 7, 8), ('SATURDAY', 12, 13), ('NEW', 6, 7), ('PP', 8, 11), ('NP', 5, 8), ('NP', 11, 13)}
+test constants
+set()
+P:0.0 R:0.0 F:0.0
+
+input:  ['what', 'flights', 'leave', 'phoenix', 'on', 'wednesday', '.']
+target:     ('TOP', ('SBARQ', ('WHNP', ('WHAT', 'what'), ('FLIGHTS', 'flights')), ('VP', ('LEAVE', 'leave'), ('VPBAR', ('NP', 'phoenix'), ('PP', ('ON', 'on'), ('NP', 'wednesday'))))), ('PUN', '.'))
+predicted:  ('TOP', ('SBARQ', ('WHNP', ('WHAT', 'what'), ('FLIGHTS', 'flights')), ('VP', ('LEAVE', 'leave'), ('VPBAR', ('NP', 'phoenix'), ('PP', ('ON', 'on'), ('NP', 'wednesday'))))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+what
+enter if str
+flights
+enter if str
+leave
+enter if str
+phoenix
+enter if str
+on
+enter if str
+wednesday
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+what
+enter if str
+flights
+enter if str
+leave
+enter if str
+phoenix
+enter if str
+on
+enter if str
+wednesday
+enter if str
+.
+gold constants
+{('PP', 4, 6), ('FLIGHTS', 1, 2), ('WHAT', 0, 1), ('VP', 2, 6), ('VPBAR', 3, 6), ('ON', 4, 5), ('PUN', 6, 7), ('NP', 3, 4), ('WHNP', 0, 2), ('LEAVE', 2, 3), ('SBARQ', 0, 6), ('NP', 5, 6), ('TOP', 0, 7)}
+test constants
+{('PP', 4, 6), ('FLIGHTS', 1, 2), ('WHAT', 0, 1), ('VP', 2, 6), ('VPBAR', 3, 6), ('ON', 4, 5), ('PUN', 6, 7), ('NP', 3, 4), ('WHNP', 0, 2), ('LEAVE', 2, 3), ('SBARQ', 0, 6), ('NP', 5, 6), ('TOP', 0, 7)}
+P:1.0 R:1.0 F:1.0
+
+input:  ['show', 'me', 'the', 'meal', '.']
+target:     ('TOP', ('VP', ('SHOW', 'show'), ('VPBAR', ('NP', 'me'), ('NP', ('THE', 'the'), ('MEAL', 'meal')))), ('PUN', '.'))
+predicted:  ()
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+show
+enter if str
+me
+enter if str
+the
+enter if str
+meal
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if not tree
+gold constants
+{('TOP', 0, 5), ('THE', 2, 3), ('VP', 0, 4), ('NP', 2, 4), ('VPBAR', 1, 4), ('MEAL', 3, 4), ('PUN', 4, 5), ('NP', 1, 2), ('SHOW', 0, 1)}
+test constants
+set()
+P:0.0 R:0.0 F:0.0
+
+input:  ['show', 'business', 'class', 'fares', '.']
+target:     ('TOP', ('VP', ('SHOW', 'show'), ('NP', ('BUSINESS', 'business'), ('NPBAR', ('CLASS', 'class'), ('FARES', 'fares')))), ('PUN', '.'))
+predicted:  ('TOP', ('VP', ('SHOW', 'show'), ('NP', ('BUSINESS', 'business'), ('NPBAR', ('CLASS', 'class'), ('FARES', 'fares')))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+show
+enter if str
+business
+enter if str
+class
+enter if str
+fares
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+show
+enter if str
+business
+enter if str
+class
+enter if str
+fares
+enter if str
+.
+gold constants
+{('TOP', 0, 5), ('CLASS', 2, 3), ('NP', 1, 4), ('VP', 0, 4), ('BUSINESS', 1, 2), ('NPBAR', 2, 4), ('FARES', 3, 4), ('PUN', 4, 5), ('SHOW', 0, 1)}
+test constants
+{('TOP', 0, 5), ('CLASS', 2, 3), ('NP', 1, 4), ('VP', 0, 4), ('BUSINESS', 1, 2), ('NPBAR', 2, 4), ('FARES', 3, 4), ('PUN', 4, 5), ('SHOW', 0, 1)}
+P:1.0 R:1.0 F:1.0
+
+input:  ['i', 'have', 'a', 'friend', 'living', 'in', 'denver', 'that', 'would', 'like', 'to', 'visit', 'me', 'here', 'in', 'washington', 'd', 'c', '.']
+target:     ('TOP', ('S', ('NP', 'i'), ('VP', ('HAVE', 'have'), ('NP', ('NP', ('A', 'a'), ('FRIEND', 'friend')), ('NPBAR', ('VP', ('LIVING', 'living'), ('PP', ('IN', 'in'), ('NP', 'denver'))), ('SBAR', ('WHNP', 'that'), ('VP', ('WOULD', 'would'), ('VP', ('LIKE', 'like'), ('VP', ('TO', 'to'), ('VP', ('VISIT', 'visit'), ('VPBAR', ('NP', 'me'), ('ADVP', ('ADVP', 'here'), ('PP', ('IN', 'in'), ('NP', ('NP', 'washington'), ('NP', ('D', 'd'), ('C', 'c'))))))))))))))), ('PUN', '.'))
+predicted:  ()
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+i
+enter if str
+have
+enter if str
+a
+enter if str
+friend
+enter if str
+living
+enter if str
+in
+enter if str
+denver
+enter if str
+that
+enter if str
+would
+enter if str
+like
+enter if str
+to
+enter if str
+visit
+enter if str
+me
+enter if str
+here
+enter if str
+in
+enter if str
+washington
+enter if str
+d
+enter if str
+c
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if not tree
+gold constants
+{('WOULD', 8, 9), ('FRIEND', 3, 4), ('VP', 9, 18), ('IN', 14, 15), ('NP', 12, 13), ('PUN', 18, 19), ('ADVP', 13, 14), ('SBAR', 7, 18), ('LIKE', 9, 10), ('IN', 5, 6), ('NP', 6, 7), ('NP', 15, 18), ('VP', 1, 18), ('S', 0, 18), ('TOP', 0, 19), ('NP', 15, 16), ('NP', 2, 4), ('C', 17, 18), ('VISIT', 11, 12), ('PP', 5, 7), ('HAVE', 1, 2), ('A', 2, 3), ('D', 16, 17), ('VP', 8, 18), ('NP', 16, 18), ('NPBAR', 4, 18), ('NP', 2, 18), ('NP', 0, 1), ('VPBAR', 12, 18), ('TO', 10, 11), ('ADVP', 13, 18), ('LIVING', 4, 5), ('VP', 11, 18), ('PP', 14, 18), ('VP', 4, 7), ('WHNP', 7, 8), ('VP', 10, 18)}
+test constants
+set()
+P:0.0 R:0.0 F:0.0
+
+input:  ['cheapest', '.']
+target:     ('TOP', ('ADJP', 'cheapest'), ('PUN', '.'))
+predicted:  ()
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+cheapest
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if not tree
+gold constants
+{('ADJP', 0, 1), ('TOP', 0, 2), ('PUN', 1, 2)}
+test constants
+set()
+P:0.0 R:0.0 F:0.0
+
+input:  ['list', 'nonstop', 'flights', 'from', 'burbank', 'to', 'denver', 'arriving', 'by', 'six', 'p.m', '.']
+target:     ('TOP', ('VP', ('LIST', 'list'), ('NP', ('NP', ('NONSTOP', 'nonstop'), ('FLIGHTS', 'flights')), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', 'burbank')), ('NPBAR', ('PP', ('TO', 'to'), ('NP', 'denver')), ('VP', ('ARRIVING', 'arriving'), ('PP', ('BY', 'by'), ('NP', ('SIX', 'six'), ('P.M', 'p.m')))))))), ('PUN', '.'))
+predicted:  ('TOP', ('VP', ('LIST', 'list'), ('NP', ('NP', ('NONSTOP', 'nonstop'), ('FLIGHTS', 'flights')), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', 'burbank')), ('NPBAR', ('PP', ('TO', 'to'), ('NP', 'denver')), ('VP', ('ARRIVING', 'arriving'), ('PP', ('BY', 'by'), ('NP', ('SIX', 'six'), ('P.M', 'p.m')))))))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+list
+enter if str
+nonstop
+enter if str
+flights
+enter if str
+from
+enter if str
+burbank
+enter if str
+to
+enter if str
+denver
+enter if str
+arriving
+enter if str
+by
+enter if str
+six
+enter if str
+p.m
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+list
+enter if str
+nonstop
+enter if str
+flights
+enter if str
+from
+enter if str
+burbank
+enter if str
+to
+enter if str
+denver
+enter if str
+arriving
+enter if str
+by
+enter if str
+six
+enter if str
+p.m
+enter if str
+.
+gold constants
+{('BY', 8, 9), ('ARRIVING', 7, 8), ('NPBAR', 5, 11), ('NP', 4, 5), ('TOP', 0, 12), ('NP', 9, 11), ('NP', 1, 3), ('SIX', 9, 10), ('PUN', 11, 12), ('NP', 6, 7), ('TO', 5, 6), ('NONSTOP', 1, 2), ('NPBAR', 3, 11), ('VP', 7, 11), ('VP', 0, 11), ('FROM', 3, 4), ('PP', 5, 7), ('PP', 3, 5), ('LIST', 0, 1), ('FLIGHTS', 2, 3), ('PP', 8, 11), ('NP', 1, 11), ('P.M', 10, 11)}
+test constants
+{('BY', 8, 9), ('ARRIVING', 7, 8), ('NPBAR', 5, 11), ('NP', 4, 5), ('TOP', 0, 12), ('NP', 9, 11), ('NP', 1, 3), ('SIX', 9, 10), ('PUN', 11, 12), ('NP', 6, 7), ('TO', 5, 6), ('NONSTOP', 1, 2), ('NPBAR', 3, 11), ('VP', 7, 11), ('VP', 0, 11), ('FROM', 3, 4), ('PP', 5, 7), ('PP', 3, 5), ('LIST', 0, 1), ('FLIGHTS', 2, 3), ('PP', 8, 11), ('NP', 1, 11), ('P.M', 10, 11)}
+P:1.0 R:1.0 F:1.0
+
+input:  ['shortest', 'morning', 'flights', 'from', 'cincinnati', 'to', 'tampa', '.']
+target:     ('TOP', ('NP', ('NP', ('SHORTEST', 'shortest'), ('NPBAR', ('MORNING', 'morning'), ('FLIGHTS', 'flights'))), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', 'cincinnati')), ('PP', ('TO', 'to'), ('NP', 'tampa')))), ('PUN', '.'))
+predicted:  ('TOP', ('NP', ('NP', ('SHORTEST', 'shortest'), ('NPBAR', ('MORNING', 'morning'), ('FLIGHTS', 'flights'))), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', 'cincinnati')), ('PP', ('TO', 'to'), ('NP', 'tampa')))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+shortest
+enter if str
+morning
+enter if str
+flights
+enter if str
+from
+enter if str
+cincinnati
+enter if str
+to
+enter if str
+tampa
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+shortest
+enter if str
+morning
+enter if str
+flights
+enter if str
+from
+enter if str
+cincinnati
+enter if str
+to
+enter if str
+tampa
+enter if str
+.
+gold constants
+{('MORNING', 1, 2), ('NPBAR', 3, 7), ('FLIGHTS', 2, 3), ('FROM', 3, 4), ('NP', 0, 3), ('TO', 5, 6), ('NP', 6, 7), ('SHORTEST', 0, 1), ('PP', 5, 7), ('NP', 0, 7), ('NP', 4, 5), ('PUN', 7, 8), ('PP', 3, 5), ('NPBAR', 1, 3), ('TOP', 0, 8)}
+test constants
+{('MORNING', 1, 2), ('NPBAR', 3, 7), ('FLIGHTS', 2, 3), ('FROM', 3, 4), ('NP', 0, 3), ('TO', 5, 6), ('NP', 6, 7), ('SHORTEST', 0, 1), ('PP', 5, 7), ('NP', 0, 7), ('NP', 4, 5), ('PUN', 7, 8), ('PP', 3, 5), ('NPBAR', 1, 3), ('TOP', 0, 8)}
+P:1.0 R:1.0 F:1.0
+
+input:  ['flights', 'from', 'kansas', 'city', 'to', 'cleveland', '.']
+target:     ('TOP', ('NP', ('NP', 'flights'), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', ('KANSAS', 'kansas'), ('CITY', 'city'))), ('PP', ('TO', 'to'), ('NP', 'cleveland')))), ('PUN', '.'))
+predicted:  ('TOP', ('NP', ('NP', 'flights'), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', ('KANSAS', 'kansas'), ('CITY', 'city'))), ('PP', ('TO', 'to'), ('NP', 'cleveland')))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+flights
+enter if str
+from
+enter if str
+kansas
+enter if str
+city
+enter if str
+to
+enter if str
+cleveland
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+flights
+enter if str
+from
+enter if str
+kansas
+enter if str
+city
+enter if str
+to
+enter if str
+cleveland
+enter if str
+.
+gold constants
+{('CITY', 3, 4), ('PP', 4, 6), ('KANSAS', 2, 3), ('PP', 1, 4), ('FROM', 1, 2), ('NP', 2, 4), ('TO', 4, 5), ('NPBAR', 1, 6), ('TOP', 0, 7), ('PUN', 6, 7), ('NP', 5, 6), ('NP', 0, 6), ('NP', 0, 1)}
+test constants
+{('CITY', 3, 4), ('PP', 4, 6), ('KANSAS', 2, 3), ('PP', 1, 4), ('FROM', 1, 2), ('NP', 2, 4), ('TO', 4, 5), ('NPBAR', 1, 6), ('TOP', 0, 7), ('PUN', 6, 7), ('NP', 5, 6), ('NP', 0, 6), ('NP', 0, 1)}
+P:1.0 R:1.0 F:1.0
+
+input:  ['from', 'toronto', 'to', 'atlanta', 'in', 'the', 'afternoon', '.']
+target:     ('TOP', ('FRAG', ('PP', ('FROM', 'from'), ('NP', 'toronto')), ('FRAGBAR', ('PP', ('TO', 'to'), ('NP', 'atlanta')), ('PP', ('IN', 'in'), ('NP', ('THE', 'the'), ('AFTERNOON', 'afternoon'))))), ('PUN', '.'))
+predicted:  ('TOP', ('FRAG', ('PP', ('FROM', 'from'), ('NP', 'toronto')), ('FRAGBAR', ('PP', ('TO', 'to'), ('NP', 'atlanta')), ('PP', ('IN', 'in'), ('NP', ('THE', 'the'), ('AFTERNOON', 'afternoon'))))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+from
+enter if str
+toronto
+enter if str
+to
+enter if str
+atlanta
+enter if str
+in
+enter if str
+the
+enter if str
+afternoon
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+from
+enter if str
+toronto
+enter if str
+to
+enter if str
+atlanta
+enter if str
+in
+enter if str
+the
+enter if str
+afternoon
+enter if str
+.
+gold constants
+{('PP', 0, 2), ('FROM', 0, 1), ('THE', 5, 6), ('PP', 4, 7), ('TO', 2, 3), ('FRAG', 0, 7), ('IN', 4, 5), ('PUN', 7, 8), ('NP', 3, 4), ('NP', 1, 2), ('FRAGBAR', 2, 7), ('AFTERNOON', 6, 7), ('TOP', 0, 8), ('PP', 2, 4), ('NP', 5, 7)}
+test constants
+{('PP', 0, 2), ('FROM', 0, 1), ('THE', 5, 6), ('PP', 4, 7), ('TO', 2, 3), ('FRAG', 0, 7), ('IN', 4, 5), ('PUN', 7, 8), ('NP', 3, 4), ('NP', 1, 2), ('FRAGBAR', 2, 7), ('AFTERNOON', 6, 7), ('TOP', 0, 8), ('PP', 2, 4), ('NP', 5, 7)}
+P:1.0 R:1.0 F:1.0
+
+input:  ['now', 'i', 'need', 'a', 'flight', 'on', 'tuesday', 'from', 'phoenix', 'to', 'detroit', '.']
+target:     ('TOP', ('S', ('ADVP', 'now'), ('SBAR', ('NP', 'i'), ('VP', ('NEED', 'need'), ('NP', ('NP', ('A', 'a'), ('FLIGHT', 'flight')), ('NPBAR', ('PP', ('ON', 'on'), ('NP', 'tuesday')), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', 'phoenix')), ('PP', ('TO', 'to'), ('NP', 'detroit')))))))), ('PUN', '.'))
+predicted:  ('TOP', ('S', ('ADVP', 'now'), ('SBAR', ('NP', 'i'), ('VP', ('NEED', 'need'), ('NP', ('NP', ('A', 'a'), ('FLIGHT', 'flight')), ('NPBAR', ('PP', ('ON', 'on'), ('NP', 'tuesday')), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', 'phoenix')), ('PP', ('TO', 'to'), ('NP', 'detroit')))))))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+now
+enter if str
+i
+enter if str
+need
+enter if str
+a
+enter if str
+flight
+enter if str
+on
+enter if str
+tuesday
+enter if str
+from
+enter if str
+phoenix
+enter if str
+to
+enter if str
+detroit
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+now
+enter if str
+i
+enter if str
+need
+enter if str
+a
+enter if str
+flight
+enter if str
+on
+enter if str
+tuesday
+enter if str
+from
+enter if str
+phoenix
+enter if str
+to
+enter if str
+detroit
+enter if str
+.
+gold constants
+{('FROM', 7, 8), ('NPBAR', 5, 11), ('TOP', 0, 12), ('FLIGHT', 4, 5), ('NP', 1, 2), ('NP', 3, 11), ('PUN', 11, 12), ('NP', 6, 7), ('NP', 10, 11), ('PP', 7, 9), ('A', 3, 4), ('PP', 5, 7), ('PP', 9, 11), ('NPBAR', 7, 11), ('NEED', 2, 3), ('S', 0, 11), ('NP', 8, 9), ('ON', 5, 6), ('TO', 9, 10), ('SBAR', 1, 11), ('VP', 2, 11), ('ADVP', 0, 1), ('NP', 3, 5)}
+test constants
+{('FROM', 7, 8), ('NPBAR', 5, 11), ('TOP', 0, 12), ('FLIGHT', 4, 5), ('NP', 1, 2), ('NP', 3, 11), ('PUN', 11, 12), ('NP', 6, 7), ('NP', 10, 11), ('PP', 7, 9), ('A', 3, 4), ('PP', 5, 7), ('PP', 9, 11), ('NPBAR', 7, 11), ('NEED', 2, 3), ('S', 0, 11), ('NP', 8, 9), ('ON', 5, 6), ('TO', 9, 10), ('SBAR', 1, 11), ('VP', 2, 11), ('ADVP', 0, 1), ('NP', 3, 5)}
+P:1.0 R:1.0 F:1.0
+
+input:  ['i', 'need', 'a', 'flight', 'the', 'next', 'day', 'from', 'newark', 'to', 'orlando', '.']
+target:     ('TOP', ('S', ('NP', 'i'), ('VP', ('NEED', 'need'), ('NP', ('NP', ('A', 'a'), ('FLIGHT', 'flight')), ('NPBAR', ('NP', ('THE', 'the'), ('NPBAR', ('NEXT', 'next'), ('DAY', 'day'))), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', 'newark')), ('PP', ('TO', 'to'), ('NP', 'orlando'))))))), ('PUN', '.'))
+predicted:  ('TOP', ('S', ('NP', 'i'), ('VP', ('NEED', 'need'), ('NP', ('NP', ('A', 'a'), ('FLIGHT', 'flight')), ('NP', ('NP', ('THE', 'the'), ('NPBAR', ('NEXT', 'next'), ('DAY', 'day'))), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', 'newark')), ('PP', ('TO', 'to'), ('NP', 'orlando'))))))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+i
+enter if str
+need
+enter if str
+a
+enter if str
+flight
+enter if str
+the
+enter if str
+next
+enter if str
+day
+enter if str
+from
+enter if str
+newark
+enter if str
+to
+enter if str
+orlando
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+i
+enter if str
+need
+enter if str
+a
+enter if str
+flight
+enter if str
+the
+enter if str
+next
+enter if str
+day
+enter if str
+from
+enter if str
+newark
+enter if str
+to
+enter if str
+orlando
+enter if str
+.
+gold constants
+{('NP', 2, 11), ('FROM', 7, 8), ('NP', 4, 7), ('TOP', 0, 12), ('PUN', 11, 12), ('NP', 10, 11), ('NPBAR', 5, 7), ('NEED', 1, 2), ('PP', 7, 9), ('NP', 2, 4), ('PP', 9, 11), ('A', 2, 3), ('FLIGHT', 3, 4), ('NPBAR', 7, 11), ('NP', 0, 1), ('THE', 4, 5), ('DAY', 6, 7), ('S', 0, 11), ('NP', 8, 9), ('TO', 9, 10), ('VP', 1, 11), ('NPBAR', 4, 11), ('NEXT', 5, 6)}
+test constants
+{('NP', 2, 11), ('FROM', 7, 8), ('NP', 4, 7), ('TOP', 0, 12), ('PUN', 11, 12), ('NP', 4, 11), ('NP', 10, 11), ('NPBAR', 5, 7), ('NEED', 1, 2), ('PP', 7, 9), ('NP', 2, 4), ('PP', 9, 11), ('A', 2, 3), ('FLIGHT', 3, 4), ('NPBAR', 7, 11), ('NP', 0, 1), ('THE', 4, 5), ('DAY', 6, 7), ('S', 0, 11), ('NP', 8, 9), ('TO', 9, 10), ('VP', 1, 11), ('NEXT', 5, 6)}
+P:0.9565217391304348 R:0.9565217391304348 F:0.9565217391304348
+
+input:  ['flights', 'from', 'pittsburgh', 'to', 'newark', '.']
+target:     ('TOP', ('NP', ('NP', 'flights'), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', 'pittsburgh')), ('PP', ('TO', 'to'), ('NP', 'newark')))), ('PUN', '.'))
+predicted:  ('TOP', ('NP', ('NP', 'flights'), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', 'pittsburgh')), ('PP', ('TO', 'to'), ('NP', 'newark')))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+flights
+enter if str
+from
+enter if str
+pittsburgh
+enter if str
+to
+enter if str
+newark
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+flights
+enter if str
+from
+enter if str
+pittsburgh
+enter if str
+to
+enter if str
+newark
+enter if str
+.
+gold constants
+{('NP', 0, 5), ('NPBAR', 1, 5), ('PP', 3, 5), ('FROM', 1, 2), ('TOP', 0, 6), ('PP', 1, 3), ('TO', 3, 4), ('NP', 4, 5), ('PUN', 5, 6), ('NP', 2, 3), ('NP', 0, 1)}
+test constants
+{('NP', 0, 5), ('NPBAR', 1, 5), ('PP', 3, 5), ('FROM', 1, 2), ('TOP', 0, 6), ('PP', 1, 3), ('TO', 3, 4), ('NP', 4, 5), ('PUN', 5, 6), ('NP', 2, 3), ('NP', 0, 1)}
+P:1.0 R:1.0 F:1.0
+
+input:  ['what', 'is', 'airline', 'f', 'f', '.']
+target:     ('TOP', ('SBARQ', ('WHNP', 'what'), ('SQ', ('IS', 'is'), ('NP', ('AIRLINE', 'airline'), ('NPBAR', ('F', 'f'), ('F', 'f'))))), ('PUN', '.'))
+predicted:  ()
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+what
+enter if str
+is
+enter if str
+airline
+enter if str
+f
+enter if str
+f
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if not tree
+gold constants
+{('AIRLINE', 2, 3), ('NP', 2, 5), ('SQ', 1, 5), ('IS', 1, 2), ('SBARQ', 0, 5), ('TOP', 0, 6), ('NPBAR', 3, 5), ('PUN', 5, 6), ('F', 3, 4), ('WHNP', 0, 1), ('F', 4, 5)}
+test constants
+set()
+P:0.0 R:0.0 F:0.0
+
+input:  ['julysixteenth', 'please', '.']
+target:     ('TOP', ('FRAG', ('NP', 'julysixteenth'), ('INTJ', 'please')), ('PUN', '.'))
+predicted:  ()
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+julysixteenth
+enter if str
+please
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if not tree
+gold constants
+{('PUN', 2, 3), ('INTJ', 1, 2), ('TOP', 0, 3), ('FRAG', 0, 2), ('NP', 0, 1)}
+test constants
+set()
+P:0.0 R:0.0 F:0.0
+
+input:  ['airports', 'in', 'new', 'york', '.']
+target:     ('TOP', ('NP', ('NP', 'airports'), ('PP', ('IN', 'in'), ('NP', ('NEW', 'new'), ('YORK', 'york')))), ('PUN', '.'))
+predicted:  ('TOP', ('FRAG', ('NP', 'airports'), ('PP', ('IN', 'in'), ('NP', ('NEW', 'new'), ('YORK', 'york')))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+airports
+enter if str
+in
+enter if str
+new
+enter if str
+york
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+airports
+enter if str
+in
+enter if str
+new
+enter if str
+york
+enter if str
+.
+gold constants
+{('YORK', 3, 4), ('TOP', 0, 5), ('NEW', 2, 3), ('PP', 1, 4), ('NP', 0, 4), ('NP', 2, 4), ('IN', 1, 2), ('PUN', 4, 5), ('NP', 0, 1)}
+test constants
+{('YORK', 3, 4), ('FRAG', 0, 4), ('TOP', 0, 5), ('NEW', 2, 3), ('PP', 1, 4), ('NP', 2, 4), ('IN', 1, 2), ('PUN', 4, 5), ('NP', 0, 1)}
+P:0.8888888888888888 R:0.8888888888888888 F:0.8888888888888888
+
+input:  ['show', 'me', 'the', 'flights', 'from', 'baltimore', 'to', 'seattle', '.']
+target:     ('TOP', ('VP', ('SHOW', 'show'), ('VPBAR', ('NP', 'me'), ('NP', ('NP', ('THE', 'the'), ('FLIGHTS', 'flights')), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', 'baltimore')), ('PP', ('TO', 'to'), ('NP', 'seattle')))))), ('PUN', '.'))
+predicted:  ('TOP', ('VP', ('SHOW', 'show'), ('VPBAR', ('NP', 'me'), ('NP', ('NP', ('THE', 'the'), ('FLIGHTS', 'flights')), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', 'baltimore')), ('PP', ('TO', 'to'), ('NP', 'seattle')))))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+show
+enter if str
+me
+enter if str
+the
+enter if str
+flights
+enter if str
+from
+enter if str
+baltimore
+enter if str
+to
+enter if str
+seattle
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+show
+enter if str
+me
+enter if str
+the
+enter if str
+flights
+enter if str
+from
+enter if str
+baltimore
+enter if str
+to
+enter if str
+seattle
+enter if str
+.
+gold constants
+{('PP', 4, 6), ('FLIGHTS', 3, 4), ('FROM', 4, 5), ('PUN', 8, 9), ('THE', 2, 3), ('NP', 2, 4), ('TO', 6, 7), ('NPBAR', 4, 8), ('VP', 0, 8), ('NP', 5, 6), ('NP', 2, 8), ('PP', 6, 8), ('VPBAR', 1, 8), ('NP', 1, 2), ('SHOW', 0, 1), ('NP', 7, 8), ('TOP', 0, 9)}
+test constants
+{('PP', 4, 6), ('FLIGHTS', 3, 4), ('FROM', 4, 5), ('PUN', 8, 9), ('THE', 2, 3), ('NP', 2, 4), ('TO', 6, 7), ('NPBAR', 4, 8), ('VP', 0, 8), ('NP', 5, 6), ('NP', 2, 8), ('PP', 6, 8), ('VPBAR', 1, 8), ('NP', 1, 2), ('SHOW', 0, 1), ('NP', 7, 8), ('TOP', 0, 9)}
+P:1.0 R:1.0 F:1.0
+
+input:  ['friday', 'afternoon', '.']
+target:     ('TOP', ('NP', ('FRIDAY', 'friday'), ('AFTERNOON', 'afternoon')), ('PUN', '.'))
+predicted:  ('TOP', ('NP', ('FRIDAY', 'friday'), ('AFTERNOON', 'afternoon')), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+friday
+enter if str
+afternoon
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+friday
+enter if str
+afternoon
+enter if str
+.
+gold constants
+{('FRIDAY', 0, 1), ('NP', 0, 2), ('PUN', 2, 3), ('TOP', 0, 3), ('AFTERNOON', 1, 2)}
+test constants
+{('FRIDAY', 0, 1), ('NP', 0, 2), ('PUN', 2, 3), ('TOP', 0, 3), ('AFTERNOON', 1, 2)}
+P:1.0 R:1.0 F:1.0
+
+input:  ['how', 'many', 'stops', 'are', 'there', '.']
+target:     ('TOP', ('SBAR', ('WHNP', ('WHADJP', ('HOW', 'how'), ('MANY', 'many')), ('STOPS', 'stops')), ('SQ', ('ARE', 'are'), ('NP', 'there'))), ('PUN', '.'))
+predicted:  ()
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+how
+enter if str
+many
+enter if str
+stops
+enter if str
+are
+enter if str
+there
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if not tree
+gold constants
+{('SBAR', 0, 5), ('MANY', 1, 2), ('ARE', 3, 4), ('WHNP', 0, 3), ('HOW', 0, 1), ('TOP', 0, 6), ('NP', 4, 5), ('PUN', 5, 6), ('SQ', 3, 5), ('WHADJP', 0, 2), ('STOPS', 2, 3)}
+test constants
+set()
+P:0.0 R:0.0 F:0.0
+
+input:  ['flights', 'from', 'pittsburgh', 'to', 'los', 'angeles', 'thursday', 'evening', '.']
+target:     ('TOP', ('NP', ('NP', 'flights'), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', 'pittsburgh')), ('NPBAR', ('PP', ('TO', 'to'), ('NP', ('LOS', 'los'), ('ANGELES', 'angeles'))), ('NP', ('THURSDAY', 'thursday'), ('EVENING', 'evening'))))), ('PUN', '.'))
+predicted:  ('TOP', ('FRAG', ('NP', 'flights'), ('FRAGBAR', ('PP', ('FROM', 'from'), ('NP', 'pittsburgh')), ('FRAGBAR', ('PP', ('TO', 'to'), ('NP', ('LOS', 'los'), ('ANGELES', 'angeles'))), ('NP', ('THURSDAY', 'thursday'), ('EVENING', 'evening'))))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+flights
+enter if str
+from
+enter if str
+pittsburgh
+enter if str
+to
+enter if str
+los
+enter if str
+angeles
+enter if str
+thursday
+enter if str
+evening
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+flights
+enter if str
+from
+enter if str
+pittsburgh
+enter if str
+to
+enter if str
+los
+enter if str
+angeles
+enter if str
+thursday
+enter if str
+evening
+enter if str
+.
+gold constants
+{('NPBAR', 1, 8), ('ANGELES', 5, 6), ('FROM', 1, 2), ('NPBAR', 3, 8), ('THURSDAY', 6, 7), ('NP', 4, 6), ('EVENING', 7, 8), ('PP', 1, 3), ('TO', 3, 4), ('PP', 3, 6), ('NP', 6, 8), ('LOS', 4, 5), ('PUN', 8, 9), ('NP', 2, 3), ('NP', 0, 8), ('NP', 0, 1), ('TOP', 0, 9)}
+test constants
+{('ANGELES', 5, 6), ('TOP', 0, 9), ('FROM', 1, 2), ('FRAGBAR', 3, 8), ('THURSDAY', 6, 7), ('NP', 4, 6), ('EVENING', 7, 8), ('FRAGBAR', 1, 8), ('PP', 1, 3), ('TO', 3, 4), ('PP', 3, 6), ('NP', 6, 8), ('LOS', 4, 5), ('PUN', 8, 9), ('NP', 2, 3), ('NP', 0, 1), ('FRAG', 0, 8)}
+P:0.8235294117647058 R:0.8235294117647058 F:0.8235294117647058
+
+input:  ['show', 'me', 'thelatestflight', 'from', 'salt', 'lake', 'city', 'to', 'phoenix', '.']
+target:     ('TOP', ('VP', ('SHOW', 'show'), ('VPBAR', ('NP', 'me'), ('NP', ('NP', 'thelatestflight'), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', ('SALT', 'salt'), ('NPBAR', ('LAKE', 'lake'), ('CITY', 'city')))), ('PP', ('TO', 'to'), ('NP', 'phoenix')))))), ('PUN', '.'))
+predicted:  ('TOP', ('VP', ('SHOW', 'show'), ('VPBAR', ('NP', 'me'), ('NP', ('NP', 'thelatestflight'), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', ('SALT', 'salt'), ('NPBAR', ('LAKE', 'lake'), ('CITY', 'city')))), ('PP', ('TO', 'to'), ('NP', 'phoenix')))))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+show
+enter if str
+me
+enter if str
+thelatestflight
+enter if str
+from
+enter if str
+salt
+enter if str
+lake
+enter if str
+city
+enter if str
+to
+enter if str
+phoenix
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+show
+enter if str
+me
+enter if str
+thelatestflight
+enter if str
+from
+enter if str
+salt
+enter if str
+lake
+enter if str
+city
+enter if str
+to
+enter if str
+phoenix
+enter if str
+.
+gold constants
+{('SALT', 4, 5), ('NP', 4, 7), ('NP', 1, 2), ('CITY', 6, 7), ('NPBAR', 3, 9), ('VP', 0, 9), ('PUN', 9, 10), ('NP', 2, 3), ('NPBAR', 5, 7), ('PP', 7, 9), ('FROM', 3, 4), ('PP', 3, 7), ('VPBAR', 1, 9), ('SHOW', 0, 1), ('LAKE', 5, 6), ('TOP', 0, 10), ('NP', 8, 9), ('NP', 2, 9), ('TO', 7, 8)}
+test constants
+{('SALT', 4, 5), ('NP', 4, 7), ('NP', 1, 2), ('CITY', 6, 7), ('NPBAR', 3, 9), ('VP', 0, 9), ('PUN', 9, 10), ('NP', 2, 3), ('NPBAR', 5, 7), ('PP', 7, 9), ('FROM', 3, 4), ('PP', 3, 7), ('VPBAR', 1, 9), ('SHOW', 0, 1), ('LAKE', 5, 6), ('TOP', 0, 10), ('NP', 8, 9), ('NP', 2, 9), ('TO', 7, 8)}
+P:1.0 R:1.0 F:1.0
+
+input:  ['of', 'those', 'flights', 'which', 'ones', 'stop', 'in', 'minneapolis', '.']
+target:     ('TOP', ('SBARQ', ('PP', ('OF', 'of'), ('NP', ('THOSE', 'those'), ('FLIGHTS', 'flights'))), ('SBARQBAR', ('WHNP', ('WHICH', 'which'), ('ONES', 'ones')), ('VP', ('STOP', 'stop'), ('PP', ('IN', 'in'), ('NP', 'minneapolis'))))), ('PUN', '.'))
+predicted:  ('TOP', ('S', ('PP', ('OF', 'of'), ('NP', ('NP', 'those'), ('FLIGHTS', 'flights'))), ('SBAR', ('WHNP', ('WHICH', 'which'), ('ONES', 'ones')), ('VP', ('STOP', 'stop'), ('PP', ('IN', 'in'), ('NP', 'minneapolis'))))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+of
+enter if str
+those
+enter if str
+flights
+enter if str
+which
+enter if str
+ones
+enter if str
+stop
+enter if str
+in
+enter if str
+minneapolis
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+of
+enter if str
+those
+enter if str
+flights
+enter if str
+which
+enter if str
+ones
+enter if str
+stop
+enter if str
+in
+enter if str
+minneapolis
+enter if str
+.
+gold constants
+{('THOSE', 1, 2), ('VP', 5, 8), ('ONES', 4, 5), ('FLIGHTS', 2, 3), ('PP', 0, 3), ('TOP', 0, 9), ('SBARQBAR', 3, 8), ('IN', 6, 7), ('SBARQ', 0, 8), ('WHICH', 3, 4), ('STOP', 5, 6), ('PP', 6, 8), ('PUN', 8, 9), ('WHNP', 3, 5), ('NP', 7, 8), ('OF', 0, 1), ('NP', 1, 3)}
+test constants
+{('VP', 5, 8), ('ONES', 4, 5), ('FLIGHTS', 2, 3), ('PP', 0, 3), ('TOP', 0, 9), ('SBAR', 3, 8), ('IN', 6, 7), ('S', 0, 8), ('WHICH', 3, 4), ('STOP', 5, 6), ('PP', 6, 8), ('PUN', 8, 9), ('NP', 1, 2), ('WHNP', 3, 5), ('NP', 7, 8), ('OF', 0, 1), ('NP', 1, 3)}
+P:0.8235294117647058 R:0.8235294117647058 F:0.8235294117647058
+
+input:  ['tuesday', '.']
+target:     ('TOP', ('NP', 'tuesday'), ('PUN', '.'))
+predicted:  ('TOP', ('NP', 'tuesday'), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+tuesday
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+tuesday
+enter if str
+.
+gold constants
+{('TOP', 0, 2), ('NP', 0, 1), ('PUN', 1, 2)}
+test constants
+{('TOP', 0, 2), ('NP', 0, 1), ('PUN', 1, 2)}
+P:1.0 R:1.0 F:1.0
+
+input:  ['flights', 'from', 'miami', 'to', 'cleveland', '.']
+target:     ('TOP', ('NP', ('NP', 'flights'), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', 'miami')), ('PP', ('TO', 'to'), ('NP', 'cleveland')))), ('PUN', '.'))
+predicted:  ('TOP', ('NP', ('NP', 'flights'), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', 'miami')), ('PP', ('TO', 'to'), ('NP', 'cleveland')))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+flights
+enter if str
+from
+enter if str
+miami
+enter if str
+to
+enter if str
+cleveland
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+flights
+enter if str
+from
+enter if str
+miami
+enter if str
+to
+enter if str
+cleveland
+enter if str
+.
+gold constants
+{('NP', 0, 5), ('NPBAR', 1, 5), ('PP', 3, 5), ('FROM', 1, 2), ('TOP', 0, 6), ('PP', 1, 3), ('TO', 3, 4), ('NP', 4, 5), ('PUN', 5, 6), ('NP', 2, 3), ('NP', 0, 1)}
+test constants
+{('NP', 0, 5), ('NPBAR', 1, 5), ('PP', 3, 5), ('FROM', 1, 2), ('TOP', 0, 6), ('PP', 1, 3), ('TO', 3, 4), ('NP', 4, 5), ('PUN', 5, 6), ('NP', 2, 3), ('NP', 0, 1)}
+P:1.0 R:1.0 F:1.0
+
+input:  ['what', 'is', 'b', 'n', 'a', '.']
+target:     ('TOP', ('SBARQ', ('WHNP', 'what'), ('SQ', ('IS', 'is'), ('NP', ('B', 'b'), ('NPBAR', ('N', 'n'), ('A', 'a'))))), ('PUN', '.'))
+predicted:  ()
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+what
+enter if str
+is
+enter if str
+b
+enter if str
+n
+enter if str
+a
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if not tree
+gold constants
+{('NP', 2, 5), ('SQ', 1, 5), ('B', 2, 3), ('IS', 1, 2), ('N', 3, 4), ('SBARQ', 0, 5), ('TOP', 0, 6), ('A', 4, 5), ('NPBAR', 3, 5), ('PUN', 5, 6), ('WHNP', 0, 1)}
+test constants
+set()
+P:0.0 R:0.0 F:0.0
+
+input:  ['show', 'me', 'the', 'flights', 'that', 'accept', 'frequent', 'flyer', 'tickets', '.']
+target:     ('TOP', ('VP', ('SHOW', 'show'), ('VPBAR', ('NP', 'me'), ('NP', ('NP', ('THE', 'the'), ('FLIGHTS', 'flights')), ('SBAR', ('WHNP', 'that'), ('VP', ('ACCEPT', 'accept'), ('NP', ('FREQUENT', 'frequent'), ('NPBAR', ('FLYER', 'flyer'), ('TICKETS', 'tickets')))))))), ('PUN', '.'))
+predicted:  ()
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+show
+enter if str
+me
+enter if str
+the
+enter if str
+flights
+enter if str
+that
+enter if str
+accept
+enter if str
+frequent
+enter if str
+flyer
+enter if str
+tickets
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if not tree
+gold constants
+{('SBAR', 4, 9), ('FREQUENT', 6, 7), ('THE', 2, 3), ('NP', 6, 9), ('ACCEPT', 5, 6), ('NP', 1, 2), ('FLYER', 7, 8), ('FLIGHTS', 3, 4), ('VP', 0, 9), ('PUN', 9, 10), ('NP', 2, 4), ('NPBAR', 7, 9), ('VPBAR', 1, 9), ('WHNP', 4, 5), ('VP', 5, 9), ('SHOW', 0, 1), ('TOP', 0, 10), ('NP', 2, 9), ('TICKETS', 8, 9)}
+test constants
+set()
+P:0.0 R:0.0 F:0.0
+
+input:  ['which', 'flights', 'depart', 'burbank', 'between', 'twelve', 'noon', 'and', 'six', 'p.m', '.']
+target:     ('TOP', ('SBARQ', ('WHNP', ('WHICH', 'which'), ('FLIGHTS', 'flights')), ('VP', ('DEPART', 'depart'), ('VPBAR', ('NP', 'burbank'), ('PP', ('BETWEEN', 'between'), ('NP', ('NP', ('TWELVE', 'twelve'), ('NOON', 'noon')), ('NPBAR', ('AND', 'and'), ('NP', ('SIX', 'six'), ('P.M', 'p.m')))))))), ('PUN', '.'))
+predicted:  ('TOP', ('SBARQ', ('WHNP', ('WHICH', 'which'), ('FLIGHTS', 'flights')), ('VP', ('DEPART', 'depart'), ('NP', ('NP', 'burbank'), ('NPBAR', ('PP', ('BETWEEN', 'between'), ('NP', ('TWELVE', 'twelve'), ('NOON', 'noon'))), ('NPBAR', ('AND', 'and'), ('NP', ('SIX', 'six'), ('P.M', 'p.m'))))))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+which
+enter if str
+flights
+enter if str
+depart
+enter if str
+burbank
+enter if str
+between
+enter if str
+twelve
+enter if str
+noon
+enter if str
+and
+enter if str
+six
+enter if str
+p.m
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+which
+enter if str
+flights
+enter if str
+depart
+enter if str
+burbank
+enter if str
+between
+enter if str
+twelve
+enter if str
+noon
+enter if str
+and
+enter if str
+six
+enter if str
+p.m
+enter if str
+.
+gold constants
+{('SIX', 8, 9), ('P.M', 9, 10), ('WHNP', 0, 2), ('PUN', 10, 11), ('NOON', 6, 7), ('NP', 5, 7), ('DEPART', 2, 3), ('PP', 4, 10), ('SBARQ', 0, 10), ('FLIGHTS', 1, 2), ('AND', 7, 8), ('NPBAR', 7, 10), ('NP', 8, 10), ('WHICH', 0, 1), ('VP', 2, 10), ('TOP', 0, 11), ('NP', 3, 4), ('TWELVE', 5, 6), ('VPBAR', 3, 10), ('BETWEEN', 4, 5), ('NP', 5, 10)}
+test constants
+{('SIX', 8, 9), ('P.M', 9, 10), ('NP', 3, 10), ('WHNP', 0, 2), ('PUN', 10, 11), ('NOON', 6, 7), ('NP', 5, 7), ('DEPART', 2, 3), ('SBARQ', 0, 10), ('FLIGHTS', 1, 2), ('AND', 7, 8), ('NPBAR', 7, 10), ('NP', 8, 10), ('PP', 4, 7), ('WHICH', 0, 1), ('VP', 2, 10), ('TOP', 0, 11), ('NP', 3, 4), ('TWELVE', 5, 6), ('BETWEEN', 4, 5), ('NPBAR', 4, 10)}
+P:0.8571428571428571 R:0.8571428571428571 F:0.8571428571428571
+
+input:  ['i', 'need', 'a', 'flight', 'from', 'kansas', 'city', 'to', 'newark', 'on', 'the', 'first', 'of', 'july', '.']
+target:     ('TOP', ('S', ('NP', 'i'), ('VP', ('NEED', 'need'), ('NP', ('NP', ('A', 'a'), ('FLIGHT', 'flight')), ('NPBAR', ('PP', ('FROM', 'from'), ('NP', ('KANSAS', 'kansas'), ('CITY', 'city'))), ('NPBAR', ('PP', ('TO', 'to'), ('NP', 'newark')), ('PP', ('ON', 'on'), ('NP', ('NP', ('THE', 'the'), ('FIRST', 'first')), ('PP', ('OF', 'of'), ('NP', 'july'))))))))), ('PUN', '.'))
+predicted:  ()
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+i
+enter if str
+need
+enter if str
+a
+enter if str
+flight
+enter if str
+from
+enter if str
+kansas
+enter if str
+city
+enter if str
+to
+enter if str
+newark
+enter if str
+on
+enter if str
+the
+enter if str
+first
+enter if str
+of
+enter if str
+july
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if not tree
+gold constants
+{('THE', 10, 11), ('TOP', 0, 15), ('VP', 1, 14), ('PUN', 14, 15), ('NP', 13, 14), ('CITY', 6, 7), ('OF', 12, 13), ('NP', 5, 7), ('NP', 2, 14), ('NPBAR', 7, 14), ('NEED', 1, 2), ('KANSAS', 5, 6), ('FROM', 4, 5), ('PP', 7, 9), ('NP', 2, 4), ('NP', 10, 12), ('A', 2, 3), ('S', 0, 14), ('FLIGHT', 3, 4), ('NP', 10, 14), ('NP', 0, 1), ('NPBAR', 4, 14), ('PP', 12, 14), ('FIRST', 11, 12), ('PP', 4, 7), ('NP', 8, 9), ('ON', 9, 10), ('PP', 9, 14), ('TO', 7, 8)}
+test constants
+set()
+P:0.0 R:0.0 F:0.0
+
+input:  ['what', 'flights', 'are', 'there', 'from', 'new', 'york', 'to', 'las', 'vegas', '.']
+target:     ('TOP', ('SBARQ', ('WHNP', ('WHAT', 'what'), ('FLIGHTS', 'flights')), ('SQ', ('ARE', 'are'), ('SQBAR', ('NP', 'there'), ('SQBAR', ('PP', ('FROM', 'from'), ('NP', ('NEW', 'new'), ('YORK', 'york'))), ('PP', ('TO', 'to'), ('NP', ('LAS', 'las'), ('VEGAS', 'vegas'))))))), ('PUN', '.'))
+predicted:  ('TOP', ('SBARQ', ('WHNP', ('WHAT', 'what'), ('FLIGHTS', 'flights')), ('SQ', ('ARE', 'are'), ('SQBAR', ('NP', 'there'), ('SQBAR', ('PP', ('FROM', 'from'), ('NP', ('NEW', 'new'), ('YORK', 'york'))), ('PP', ('TO', 'to'), ('NP', ('LAS', 'las'), ('VEGAS', 'vegas'))))))), ('PUN', '.'))
+GET CONSTITUENT CALLED FOR GOLD TREE
+enter if str
+what
+enter if str
+flights
+enter if str
+are
+enter if str
+there
+enter if str
+from
+enter if str
+new
+enter if str
+york
+enter if str
+to
+enter if str
+las
+enter if str
+vegas
+enter if str
+.
+GET CONSTITUENT CALLED FOR TEST TREE
+enter if str
+what
+enter if str
+flights
+enter if str
+are
+enter if str
+there
+enter if str
+from
+enter if str
+new
+enter if str
+york
+enter if str
+to
+enter if str
+las
+enter if str
+vegas
+enter if str
+.
+gold constants
+{('WHNP', 0, 2), ('PUN', 10, 11), ('NP', 5, 7), ('SQBAR', 3, 10), ('LAS', 8, 9), ('SQ', 2, 10), ('NEW', 5, 6), ('PP', 7, 10), ('SBARQ', 0, 10), ('FROM', 4, 5), ('FLIGHTS', 1, 2), ('YORK', 6, 7), ('ARE', 2, 3), ('NP', 8, 10), ('PP', 4, 7), ('WHAT', 0, 1), ('SQBAR', 4, 10), ('TOP', 0, 11), ('VEGAS', 9, 10), ('NP', 3, 4), ('TO', 7, 8)}
+test constants
+{('WHNP', 0, 2), ('PUN', 10, 11), ('NP', 5, 7), ('SQBAR', 3, 10), ('LAS', 8, 9), ('SQ', 2, 10), ('NEW', 5, 6), ('PP', 7, 10), ('SBARQ', 0, 10), ('FROM', 4, 5), ('FLIGHTS', 1, 2), ('YORK', 6, 7), ('ARE', 2, 3), ('NP', 8, 10), ('PP', 4, 7), ('WHAT', 0, 1), ('SQBAR', 4, 10), ('TOP', 0, 11), ('VEGAS', 9, 10), ('NP', 3, 4), ('TO', 7, 8)}
+P:1.0 R:1.0 F:1.0
+
+Coverage: 67.24%, Average F-score (parsed sentences): 0.9504475408614075, Average F-score (all sentences): 0.6390940360964636

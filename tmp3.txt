@@ -1,0 +1,245 @@
+in loop for i = 0, k= 1, j=2
+for (i,k) :
+{'FLIGHTS': 'flights', 'NP': 'flights'}
+for (k,j) :
+{'FROM': 'from', 'PP': 'from'}
+
+
+in loop for i = 1, k= 2, j=3
+for (i,k) :
+{'FROM': 'from', 'PP': 'from'}
+for (k,j) :
+{'NP': 'miami'}
+
+
+in loop for i = 2, k= 3, j=4
+for (i,k) :
+{'NP': 'miami'}
+for (k,j) :
+{'TO': 'to', 'X': 'to'}
+
+
+in loop for i = 3, k= 4, j=5
+for (i,k) :
+{'TO': 'to', 'X': 'to'}
+for (k,j) :
+{'CLEVELAND': 'cleveland', 'NP': 'cleveland'}
+
+
+in loop for i = 4, k= 5, j=6
+for (i,k) :
+{'CLEVELAND': 'cleveland', 'NP': 'cleveland'}
+for (k,j) :
+{'PUN': '.'}
+
+
+in loop for i = 0, k= 1, j=3
+for (i,k) :
+{'FLIGHTS': 'flights', 'NP': 'flights'}
+for (k,j) :
+{'PP': (('FROM', 1, 2), ('NP', 2, 3)), 'FRAGBAR': (('PP', 1, 2), ('NP', 2, 3)), 'NPBAR': (('PP', 1, 2), ('NP', 2, 3)), 'VPBAR': (('PP', 1, 2), ('NP', 2, 3))}
+
+
+in loop for i = 0, k= 2, j=3
+for (i,k) :
+{'FRAG': (('NP', 0, 1), ('PP', 1, 2)), 'NP': (('NP', 0, 1), ('PP', 1, 2)), 'SQBAR': (('NP', 0, 1), ('PP', 1, 2)), 'VPBAR': (('NP', 0, 1), ('PP', 1, 2))}
+for (k,j) :
+{'NP': 'miami'}
+
+
+in loop for i = 1, k= 2, j=4
+for (i,k) :
+{'FROM': 'from', 'PP': 'from'}
+for (k,j) :
+{}
+
+
+in loop for i = 1, k= 3, j=4
+for (i,k) :
+{'PP': (('FROM', 1, 2), ('NP', 2, 3)), 'FRAGBAR': (('PP', 1, 2), ('NP', 2, 3)), 'NPBAR': (('PP', 1, 2), ('NP', 2, 3)), 'VPBAR': (('PP', 1, 2), ('NP', 2, 3))}
+for (k,j) :
+{'TO': 'to', 'X': 'to'}
+
+
+in loop for i = 2, k= 3, j=5
+for (i,k) :
+{'NP': 'miami'}
+for (k,j) :
+{'PP': (('TO', 3, 4), ('NP', 4, 5)), 'FRAG': (('X', 3, 4), ('NP', 4, 5))}
+
+
+in loop for i = 2, k= 4, j=5
+for (i,k) :
+{}
+for (k,j) :
+{'CLEVELAND': 'cleveland', 'NP': 'cleveland'}
+
+
+in loop for i = 3, k= 4, j=6
+for (i,k) :
+{'TO': 'to', 'X': 'to'}
+for (k,j) :
+{'TOP': (('NP', 4, 5), ('PUN', 5, 6))}
+
+
+in loop for i = 3, k= 5, j=6
+for (i,k) :
+{'PP': (('TO', 3, 4), ('NP', 4, 5)), 'FRAG': (('X', 3, 4), ('NP', 4, 5))}
+for (k,j) :
+{'PUN': '.'}
+
+
+in loop for i = 0, k= 1, j=4
+for (i,k) :
+{'FLIGHTS': 'flights', 'NP': 'flights'}
+for (k,j) :
+{}
+
+
+in loop for i = 0, k= 2, j=4
+for (i,k) :
+{'FRAG': (('NP', 0, 1), ('PP', 1, 2)), 'NP': (('NP', 0, 1), ('PP', 1, 2)), 'SQBAR': (('NP', 0, 1), ('PP', 1, 2)), 'VPBAR': (('NP', 0, 1), ('PP', 1, 2))}
+for (k,j) :
+{}
+
+
+in loop for i = 0, k= 3, j=4
+for (i,k) :
+{'FRAG': (('NP', 0, 1), ('PP', 1, 3)), 'NP': (('NP', 0, 1), ('PP', 1, 3)), 'SQBAR': (('NP', 0, 1), ('PP', 1, 3)), 'VPBAR': (('NP', 0, 1), ('PP', 1, 3)), 'FRAGBAR': (('NP', 0, 1), ('FRAGBAR', 1, 3)), 'NPBAR': (('NP', 0, 1), ('NPBAR', 1, 3))}
+for (k,j) :
+{'TO': 'to', 'X': 'to'}
+
+
+in loop for i = 1, k= 2, j=5
+for (i,k) :
+{'FROM': 'from', 'PP': 'from'}
+for (k,j) :
+{'FRAG': (('NP', 2, 3), ('PP', 3, 5)), 'NP': (('NP', 2, 3), ('PP', 3, 5)), 'SQBAR': (('NP', 2, 3), ('PP', 3, 5)), 'VPBAR': (('NP', 2, 3), ('PP', 3, 5))}
+
+
+in loop for i = 1, k= 3, j=5
+for (i,k) :
+{'PP': (('FROM', 1, 2), ('NP', 2, 3)), 'FRAGBAR': (('PP', 1, 2), ('NP', 2, 3)), 'NPBAR': (('PP', 1, 2), ('NP', 2, 3)), 'VPBAR': (('PP', 1, 2), ('NP', 2, 3))}
+for (k,j) :
+{'PP': (('TO', 3, 4), ('NP', 4, 5)), 'FRAG': (('X', 3, 4), ('NP', 4, 5))}
+
+
+in loop for i = 1, k= 4, j=5
+for (i,k) :
+{}
+for (k,j) :
+{'CLEVELAND': 'cleveland', 'NP': 'cleveland'}
+
+
+in loop for i = 2, k= 3, j=6
+for (i,k) :
+{'NP': 'miami'}
+for (k,j) :
+{'TOP': (('PP', 3, 5), ('PUN', 5, 6))}
+
+
+in loop for i = 2, k= 4, j=6
+for (i,k) :
+{}
+for (k,j) :
+{'TOP': (('NP', 4, 5), ('PUN', 5, 6))}
+
+
+in loop for i = 2, k= 5, j=6
+for (i,k) :
+{'FRAG': (('NP', 2, 3), ('PP', 3, 5)), 'NP': (('NP', 2, 3), ('PP', 3, 5)), 'SQBAR': (('NP', 2, 3), ('PP', 3, 5)), 'VPBAR': (('NP', 2, 3), ('PP', 3, 5))}
+for (k,j) :
+{'PUN': '.'}
+
+
+in loop for i = 0, k= 1, j=5
+for (i,k) :
+{'FLIGHTS': 'flights', 'NP': 'flights'}
+for (k,j) :
+{'PP': (('FROM', 1, 2), ('NP', 2, 5)), 'FRAGBAR': (('PP', 1, 3), ('PP', 3, 5)), 'NPBAR': (('PP', 1, 3), ('PP', 3, 5)), 'VPBAR': (('PP', 1, 3), ('PP', 3, 5)), 'SQBAR': (('PP', 1, 3), ('PP', 3, 5)), 'FRAG': (('PP', 1, 3), ('PP', 3, 5)), 'WHNPBAR': (('PP', 1, 3), ('PP', 3, 5))}
+
+
+in loop for i = 0, k= 2, j=5
+for (i,k) :
+{'FRAG': (('NP', 0, 1), ('PP', 1, 2)), 'NP': (('NP', 0, 1), ('PP', 1, 2)), 'SQBAR': (('NP', 0, 1), ('PP', 1, 2)), 'VPBAR': (('NP', 0, 1), ('PP', 1, 2))}
+for (k,j) :
+{'FRAG': (('NP', 2, 3), ('PP', 3, 5)), 'NP': (('NP', 2, 3), ('PP', 3, 5)), 'SQBAR': (('NP', 2, 3), ('PP', 3, 5)), 'VPBAR': (('NP', 2, 3), ('PP', 3, 5))}
+
+
+in loop for i = 0, k= 3, j=5
+for (i,k) :
+{'FRAG': (('NP', 0, 1), ('PP', 1, 3)), 'NP': (('NP', 0, 1), ('PP', 1, 3)), 'SQBAR': (('NP', 0, 1), ('PP', 1, 3)), 'VPBAR': (('NP', 0, 1), ('PP', 1, 3)), 'FRAGBAR': (('NP', 0, 1), ('FRAGBAR', 1, 3)), 'NPBAR': (('NP', 0, 1), ('NPBAR', 1, 3))}
+for (k,j) :
+{'PP': (('TO', 3, 4), ('NP', 4, 5)), 'FRAG': (('X', 3, 4), ('NP', 4, 5))}
+
+
+in loop for i = 0, k= 4, j=5
+for (i,k) :
+{}
+for (k,j) :
+{'CLEVELAND': 'cleveland', 'NP': 'cleveland'}
+
+
+in loop for i = 1, k= 2, j=6
+for (i,k) :
+{'FROM': 'from', 'PP': 'from'}
+for (k,j) :
+{'TOP': (('FRAG', 2, 5), ('PUN', 5, 6))}
+
+
+in loop for i = 1, k= 3, j=6
+for (i,k) :
+{'PP': (('FROM', 1, 2), ('NP', 2, 3)), 'FRAGBAR': (('PP', 1, 2), ('NP', 2, 3)), 'NPBAR': (('PP', 1, 2), ('NP', 2, 3)), 'VPBAR': (('PP', 1, 2), ('NP', 2, 3))}
+for (k,j) :
+{'TOP': (('PP', 3, 5), ('PUN', 5, 6))}
+
+
+in loop for i = 1, k= 4, j=6
+for (i,k) :
+{}
+for (k,j) :
+{'TOP': (('NP', 4, 5), ('PUN', 5, 6))}
+
+
+in loop for i = 1, k= 5, j=6
+for (i,k) :
+{'PP': (('FROM', 1, 2), ('NP', 2, 5)), 'FRAGBAR': (('PP', 1, 3), ('PP', 3, 5)), 'NPBAR': (('PP', 1, 3), ('PP', 3, 5)), 'VPBAR': (('PP', 1, 3), ('PP', 3, 5)), 'SQBAR': (('PP', 1, 3), ('PP', 3, 5)), 'FRAG': (('PP', 1, 3), ('PP', 3, 5)), 'WHNPBAR': (('PP', 1, 3), ('PP', 3, 5))}
+for (k,j) :
+{'PUN': '.'}
+
+
+in loop for i = 0, k= 1, j=6
+for (i,k) :
+{'FLIGHTS': 'flights', 'NP': 'flights'}
+for (k,j) :
+{'TOP': (('FRAG', 1, 5), ('PUN', 5, 6))}
+
+
+in loop for i = 0, k= 2, j=6
+for (i,k) :
+{'FRAG': (('NP', 0, 1), ('PP', 1, 2)), 'NP': (('NP', 0, 1), ('PP', 1, 2)), 'SQBAR': (('NP', 0, 1), ('PP', 1, 2)), 'VPBAR': (('NP', 0, 1), ('PP', 1, 2))}
+for (k,j) :
+{'TOP': (('FRAG', 2, 5), ('PUN', 5, 6))}
+
+
+in loop for i = 0, k= 3, j=6
+for (i,k) :
+{'FRAG': (('NP', 0, 1), ('PP', 1, 3)), 'NP': (('NP', 0, 1), ('PP', 1, 3)), 'SQBAR': (('NP', 0, 1), ('PP', 1, 3)), 'VPBAR': (('NP', 0, 1), ('PP', 1, 3)), 'FRAGBAR': (('NP', 0, 1), ('FRAGBAR', 1, 3)), 'NPBAR': (('NP', 0, 1), ('NPBAR', 1, 3))}
+for (k,j) :
+{'TOP': (('PP', 3, 5), ('PUN', 5, 6))}
+
+
+in loop for i = 0, k= 4, j=6
+for (i,k) :
+{}
+for (k,j) :
+{'TOP': (('NP', 4, 5), ('PUN', 5, 6))}
+
+
+in loop for i = 0, k= 5, j=6
+for (i,k) :
+{'FRAG': (('NP', 0, 1), ('FRAGBAR', 1, 5)), 'NP': (('NP', 0, 1), ('NPBAR', 1, 5)), 'SQBAR': (('NP', 0, 1), ('SQBAR', 1, 5)), 'VPBAR': (('NP', 0, 1), ('VPBAR', 1, 5)), 'FRAGBAR': (('NP', 0, 1), ('FRAGBAR', 1, 5)), 'NPBAR': (('NP', 0, 1), ('NPBAR', 1, 5))}
+for (k,j) :
+{'PUN': '.'}
+
+
